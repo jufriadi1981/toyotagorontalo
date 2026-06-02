@@ -225,7 +225,7 @@ const testimonials = [
       <img
         src={toyotaLogo}
         alt="Toyota"
-        className="h-10 md:h-16 object-contain"
+        className="h-14 md:h-16 object-contain"
       />
     </div>
 
@@ -275,7 +275,7 @@ const testimonials = [
       <img
         src={hasjratLogo}
         alt="Hasjrat Toyota"
-        className="h-10 md:h-16 object-contain"
+        className="h-14 md:h-16 object-contain"
       />
     </div>
 
@@ -492,7 +492,7 @@ const testimonials = [
   <div className="max-w-6xl mx-auto text-center">
 
     <h2 className="text-3xl md:text-5xl font-black mb-6">
-      🔥 PROMO TOYOTA TEST
+      🔥 PROMO TOYOTA
       GORONTALO {monthYear.toUpperCase()}
     </h2>
 
