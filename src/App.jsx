@@ -292,16 +292,16 @@ const testimonials = [
         <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-500 px-5 py-2 rounded-full text-white text-sm font-bold shadow-lg mb-6">
         🎁 PROMO SPESIAL TOYOTA {monthYear.toUpperCase()}
         </div>
-<h1 className="text-5xl md:text-7xl font-black leading-tight">
+<h1 className="text-3xl md:text-5xl font-black leading-tight mb-4">
   Promo Toyota
   <span className="block text-red-500">
     Gorontalo
   </span>
 </h1>
 
-<h2 className="text-3xl md:text-5xl font-black text-red-400 mt-2">
+<div className="inline-block bg-red-600 text-white px-4 py-2 rounded-full font-semibold mb-4">
   {monthYear}
-</h2>
+</div>
 
 <p className="text-2xl md:text-2xl font-bold text-red-400 mb-6 leading-relaxed">
   DP Mulai 10% • Trade In • Kredit Mudah
