@@ -218,7 +218,7 @@ const testimonials = [
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/10 shadow-2xl">
-  <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 h-[95px]">
+  <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 h-[70px]">
 
     {/* Logo Toyota */}
     <div>
@@ -283,33 +283,37 @@ const testimonials = [
 </header>
 
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center px-6 md:px-16 pt-24 overflow-hidden">
+      <section className="relative min-h-[85vh] pt-24 md:pt-32">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_right,_rgba(220,38,38,0.35),transparent_40%),linear-gradient(to_right,_#000000,_#120000,_#000000)]"></div>
-<div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-20 items-center max-w-7xl mx-auto relative z-10">
+<div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 md:gap-20 items-center max-w-7xl mx-auto relative z-10 px-5 md:px-10">
   <div>
     <div className="max-w-[620px]"></div>
     
         <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-500 px-5 py-2 rounded-full text-white text-sm font-bold shadow-lg mb-6">
         🎁 PROMO SPESIAL TOYOTA {monthYear.toUpperCase()}
         </div>
-<h1 className="text-4xl md:text-5xl font-black leading-tight mb-4">
+<h1 className="text-5xl md:text-7xl font-black leading-tight">
   Promo Toyota
   <span className="block text-red-500">
-    Gorontalo {monthYear}
+    Gorontalo
   </span>
 </h1>
 
-<p className="text-2xl font-bold text-red-400 mb-4">
+<h2 className="text-3xl md:text-5xl font-black text-red-400 mt-2">
+  {monthYear}
+</h2>
+
+<p className="text-2xl md:text-2xl font-bold text-red-400 mb-6 leading-relaxed">
   DP Mulai 10% • Trade In • Kredit Mudah
 </p>
 
- <p className="mt-4 text-lg text-gray-300 leading-relaxed max-w-lg">
+ <p className="mt-4 text-base md:text-lg text-gray-300 leading-relaxed max-w-lg">
   Dapatkan penawaran terbaik Toyota untuk wilayah Gorontalo
   dengan promo menarik, konsultasi kredit gratis, dan pelayanan
   cepat dari Sales Executive Toyota.
 </p>
 
-<div className="mt-6 grid grid-cols-2 gap-3 max-w-lg">
+<div className="flex flex-col gap-4 md:grid md:grid-cols-2 max-w-lg">
 
   <div className="flex items-center gap-3 text-lg">
     <span>✅</span>
@@ -388,7 +392,7 @@ const testimonials = [
     <div className="text-xs text-gray-400">Respon WA</div>
   </div>
 </div>
-            <div className="mt-10 flex gap-4 flex-wrap">
+            <div className="mt-10 flex flex-col md:flex-row gap-4">
               <button
   onClick={() =>
     window.open(
@@ -484,12 +488,11 @@ const testimonials = [
 
       {/* Product */}
       <div id="promo"></div>
-      <section className="px-6 md:px-16 py-6 bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white">
+      <section className="px-6 md:px-16 py-3 bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white">
   <div className="max-w-6xl mx-auto text-center">
 
     <h2 className="text-3xl md:text-5xl font-black mb-6">
-      🔥 PROMO TOYOTA 
-      <br />
+      🔥 PROMO TOYOTA TEST
       GORONTALO {monthYear.toUpperCase()}
     </h2>
 
@@ -996,7 +999,7 @@ onClick={() => {
   console.log("WA Klik - Cek Promo");
   console.log("WA Klik - Simulasi");
   console.log("WA Klik - Form Leads");
-  
+
   window.open(
     `https://wa.me/6282340002917?...`,
     "_blank"
@@ -1173,7 +1176,7 @@ onClick={() => {
   </div>
 
 </div>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid grid-cols-1 md:grid-cols-2">
 
   <button
     onClick={() =>
