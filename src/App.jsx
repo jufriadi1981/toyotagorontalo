@@ -299,7 +299,7 @@ const testimonials = [
   </span>
 </h1>
 
-<p className="text-2xl md:text-2xl font-bold text-red-400 mb-6 leading-relaxed">
+<p className="text-xl md:text-2xl font-bold text-red-400 mb-6 leading-tight">
   DP Mulai 10% • Trade In • Kredit Mudah
 </p>
 
