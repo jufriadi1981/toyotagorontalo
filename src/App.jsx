@@ -299,10 +299,6 @@ const testimonials = [
   </span>
 </h1>
 
-<div className="inline-block bg-red-600 text-white px-4 py-2 rounded-full font-semibold mb-4">
-  {monthYear}
-</div>
-
 <p className="text-2xl md:text-2xl font-bold text-red-400 mb-6 leading-relaxed">
   DP Mulai 10% • Trade In • Kredit Mudah
 </p>
