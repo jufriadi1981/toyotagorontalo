@@ -219,14 +219,14 @@ const testimonials = [
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/10 shadow-2xl">
-  <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 h-[70px]">
+  <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 h-[80px]">
 
    {/* Logo Hasjrat */}
 <div>
   <img
     src={hasjratLogo}
     alt="Hasjrat Toyota"
-    className="h-14 md:h-16 object-contain"
+    className="h-12 md:h-14 object-contain"
   />
 </div>
 
