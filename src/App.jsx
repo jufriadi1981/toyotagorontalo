@@ -226,7 +226,7 @@ const testimonials = [
   <img
     src={hasjratLogo}
     alt="Hasjrat Toyota"
-    className="h-12 md:h-14 object-contain"
+    className="h-8 md:h-14 object-contain"
   />
 </div>
 
