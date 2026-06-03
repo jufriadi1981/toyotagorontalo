@@ -221,14 +221,14 @@ const testimonials = [
       <header className="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/10 shadow-2xl">
   <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 h-[70px]">
 
-    {/* Logo Toyota */}
-    <div>
-      <img
-        src={toyotaLogo}
-        alt="Toyota"
-        className="h-10 md:h-16 object-contain"
-      />
-    </div>
+   {/* Logo Hasjrat */}
+<div>
+  <img
+    src={hasjratLogo}
+    alt="Hasjrat Toyota"
+    className="h-14 md:h-16 object-contain"
+  />
+</div>
 
     {/* Menu */}
     <button
@@ -276,7 +276,6 @@ const testimonials = [
         Kontak
       </a>
     </nav>
-    </nav>
 
 {mobileMenu && (
   <div className="absolute top-full left-0 w-full bg-black/95 text-white lg:hidden z-[9999]">
@@ -308,15 +307,12 @@ const testimonials = [
 
 {/* Logo Hasjrat */}
 <div>
-
-    {/* Logo Hasjrat */}
-    <div>
-      <img
-        src={hasjratLogo}
-        alt="Hasjrat Toyota"
-        className="h-14 md:h-16 object-contain"
-      />
-    </div>
+  <img
+    src={hasjratLogo}
+    alt="Hasjrat Toyota"
+    className="h-14 md:h-16 object-contain"
+  />
+</div>
 
   </div>
 </header>
