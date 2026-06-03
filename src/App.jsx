@@ -797,7 +797,7 @@ Saya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;
       Simulasi Kredit Toyota
       </p>
 
-      <div className="space-y-3 mb-6">
+      <div className="space-y-2 mb-4">
 
         <div className="bg-red-50 border border-red-100 p-4 rounded-2xl">
           <p className="text-xs text-gray-500">
@@ -1024,11 +1024,11 @@ Saya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;
       {selectedCar && (
   <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[9999] p-4">
 
-    <div className="bg-white rounded-3xl max-w-md w-full pt-14 pb-6 px-6 relative">
+    <div className="bg-white rounded-3xl max-w-md w-full max-h-[90vh] overflow-y-auto pt-14 pb-6 px-6 relative">
 
    <button
     onClick={() => setSelectedCar(null)}
-    className="absolute top-3 right-3 z-[9999] w-10 h-10 bg-red-600 text-white rounded-full shadow-lg flex items-center justify-center text-2xl font-bold"
+    className="sticky top-2 ml-auto z-[9999] w-10 h-10 bg-red-600 text-white rounded-full shadow-lg flex items-center justify-center text-2xl font-bold"
     >
       ×
   </button>
@@ -1036,10 +1036,10 @@ Saya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;
       <img
         src={selectedCar.image}
         alt={selectedCar.name}
-        className="w-full h-52 object-contain mb-4"
+         className="w-full h-36 object-contain mb-3"
       />
 
-      <h2 className="text-3xl font-black mb-2 text-black">
+      <h2 className="text-2xl font-black mb-2 text-black">
         {selectedCar.name}
       </h2>
 
@@ -1055,7 +1055,7 @@ Saya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;
       Promo Toyota {monthYear}
       </div>
 
-      <div className="space-y-3 mb-6">
+      <div className="space-y-2 mb-4">
 
   <div className="bg-red-50 border border-red-100 p-4 rounded-2xl">
     <p className="text-xs text-gray-500">
