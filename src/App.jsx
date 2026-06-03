@@ -559,11 +559,7 @@ const testimonials = [
 
 </div>
 
-              <h3 className="text-3xl font-black text-black mb-2">
-              {car.name}
-              </h3>
-
-        <h3 className="text-3xl font-black text-black mb-2">
+<h3 className="text-3xl font-black text-black mb-2">
   {car.name}
 </h3>
 
@@ -582,12 +578,6 @@ const testimonials = [
 </div>
 
 <div className="flex gap-3 mt-5">
-              
-              <p className="text-gray-500 mb-6 min-h-[56px]">
-              {car.desc}
-              </p>
-
-              <div className="flex gap-3 mt-5">
 
   <button
   onClick={() => {
@@ -599,7 +589,7 @@ const testimonials = [
   Lihat Detail
 </button>
 
-  <button
+<button
   onClick={() => {
     setSelectedTenor(60);
     setSelectedSimulasi(car);
@@ -610,7 +600,7 @@ const testimonials = [
 </button>
 
 </div>
-            </div>
+</div>
           ))}
         </div>
       </section>
@@ -993,20 +983,6 @@ Saya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;
 {/* Floating Sales Card */}
 
 <div
-
-onClick={() => {
-  console.log("WA Klik - Hero Banner");
-  console.log("WA Klik - Floating");
-  console.log("WA Klik - Test Drive");
-  console.log("WA Klik - Cek Promo");
-  console.log("WA Klik - Simulasi");
-  console.log("WA Klik - Form Leads");
-
-  window.open(
-    `https://wa.me/6282340002917?...`,
-    "_blank"
-  );
-}}
   className="hidden md:block fixed bottom-4 right-4 md:bottom-10 md:right-6 z-50 cursor-pointer hover:scale-105 transition-all duration-300"
   onClick={() =>
     window.open(
@@ -1210,9 +1186,8 @@ onClick={() => {
       *Harga dan angsuran dapat berubah sesuai program leasing dan persetujuan kredit.
       </p>
 
-    </div>
-
-  </div>
+   </div>
+</div>
 )}
     </div>
   );
