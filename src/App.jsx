@@ -295,9 +295,22 @@ const testimonials = [
       Layanan
     </a>
 
-    <a href="#testimoni" className="block px-6 py-3 border-b border-gray-700">
-      Testimoni
-    </a>
+    <button
+  onClick={() => {
+    setShowTestimonials(true);
+
+    setTimeout(() => {
+      document
+        .getElementById("testimoni")
+        ?.scrollIntoView({ behavior: "smooth" });
+    }, 200);
+
+    setMobileMenu(false);
+  }}
+  className="block w-full text-left px-6 py-3 border-b border-gray-700"
+>
+  Testimoni
+</button>
 
     <a href="#kontak" className="block px-6 py-3">
       Kontak
@@ -738,6 +751,41 @@ Saya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;
 </section>
 
 {/* Lokasi Showroom */}
+
+<section id="layanan" className="py-20 px-6 md:px-16 bg-[#120000]">
+  <div className="max-w-6xl mx-auto text-center">
+
+    <h2 className="text-4xl md:text-5xl font-black mb-10">
+      Layanan Toyota Gorontalo
+    </h2>
+
+    <div className="grid md:grid-cols-4 gap-6">
+
+      <div className="bg-white/5 rounded-3xl p-6">
+        🚗
+        <h3 className="font-bold mt-3">Test Drive</h3>
+      </div>
+
+      <div className="bg-white/5 rounded-3xl p-6">
+        🔄
+        <h3 className="font-bold mt-3">Trade In</h3>
+      </div>
+
+      <div className="bg-white/5 rounded-3xl p-6">
+        💳
+        <h3 className="font-bold mt-3">Simulasi Kredit</h3>
+      </div>
+
+      <div className="bg-white/5 rounded-3xl p-6">
+        🛠️
+        <h3 className="font-bold mt-3">After Sales</h3>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 <section id="kontak" className="py-20 px-6 md:px-16 bg-black">
   <div className="max-w-6xl mx-auto">
 
@@ -938,7 +986,6 @@ Saya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;
 
   </div>
 )}
-
       {showTestimonials && (
       <section id="testimoni" className="py-24 px-6 md:px-16 bg-gradient-to-b from-black to-[#120000]">
         <div className="max-w-screen-2xl mx-auto">
@@ -1247,13 +1294,14 @@ Saya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;
 
 </div>
 
-      <p className="text-xs text-gray-500 text-center mb-4">
-      *Harga dan angsuran dapat berubah sesuai program leasing dan persetujuan kredit.
+            <p className="text-xs text-gray-500 text-center mb-4">
+        *Harga dan angsuran dapat berubah sesuai program leasing dan persetujuan kredit.
       </p>
 
-   </div>
-</div>
+    </div>
+  </div>
 )}
+
     </div>
   );
 }
