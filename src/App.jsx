@@ -1019,6 +1019,16 @@ Saya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;
 
 <footer className="py-8 text-center text-gray-500 border-t border-white/10 bg-black">
   © 2026 Hayatul Kirom - Sales Executive Toyota Gorontalo
+{/* Floating WhatsApp Mobile */}
+<a
+
+  href="https://wa.me/6282340002917?text=Halo Pak Hayatul, saya ingin mendapatkan promo Toyota terbaru."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="md:hidden fixed bottom-0 left-0 right-0 z-[9999] bg-green-500 text-white py-4 text-center font-bold text-lg shadow-[0_-4px_20px_rgba(0,0,0,0.25)]"
+>
+  🟢 Chat Promo Toyota Sekarang
+</a>
 </footer>
 
       {selectedCar && (
