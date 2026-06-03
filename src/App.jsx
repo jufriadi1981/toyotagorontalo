@@ -542,7 +542,7 @@ const testimonials = [
  <img
   src={car.image}
   alt={car.name}
-  className="w-full h-full object-contain p-0 md:p-6 hover:scale-125 transition-all duration-700"
+  className="w-full h-56 object-contain hover:scale-110 transition-all duration-700"
  />
 
   {["Agya","Calya","Hilux Rangga"].includes(car.name) && (
@@ -562,6 +562,26 @@ const testimonials = [
               <h3 className="text-3xl font-black text-black mb-2">
               {car.name}
               </h3>
+
+        <h3 className="text-3xl font-black text-black mb-2">
+  {car.name}
+</h3>
+
+<p className="text-gray-500 mb-6 min-h-[56px]">
+  {car.desc}
+</p>
+
+<div className="mb-5">
+  <p className="text-red-600 text-2xl font-black">
+    {car.price}
+  </p>
+
+  <p className="text-green-600 font-bold">
+    DP Mulai {car.dp}
+  </p>
+</div>
+
+<div className="flex gap-3 mt-5">
               
               <p className="text-gray-500 mb-6 min-h-[56px]">
               {car.desc}
