@@ -542,7 +542,7 @@ const testimonials = [
  <img
   src={car.image}
   alt={car.name}
-  className="w-full h-56 object-contain hover:scale-110 transition-all duration-700"
+  className="w-full h-40 object-contain hover:scale-105 transition-all duration-500"
  />
 
   {["Agya","Calya","Hilux Rangga"].includes(car.name) && (
