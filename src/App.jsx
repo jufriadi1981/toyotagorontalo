@@ -276,6 +276,38 @@ const testimonials = [
         Kontak
       </a>
     </nav>
+    </nav>
+
+{mobileMenu && (
+  <div className="absolute top-full left-0 w-full bg-black/95 text-white lg:hidden z-[9999]">
+    <a href="#beranda" className="block px-6 py-3 border-b border-gray-700">
+      Beranda
+    </a>
+
+    <a href="#unit" className="block px-6 py-3 border-b border-gray-700">
+      Unit Toyota
+    </a>
+
+    <a href="#promo" className="block px-6 py-3 border-b border-gray-700">
+      Promo
+    </a>
+
+    <a href="#layanan" className="block px-6 py-3 border-b border-gray-700">
+      Layanan
+    </a>
+
+    <a href="#testimoni" className="block px-6 py-3 border-b border-gray-700">
+      Testimoni
+    </a>
+
+    <a href="#kontak" className="block px-6 py-3">
+      Kontak
+    </a>
+  </div>
+)}
+
+{/* Logo Hasjrat */}
+<div>
 
     {/* Logo Hasjrat */}
     <div>
