@@ -225,12 +225,12 @@ const testimonials = [
       <img
         src={toyotaLogo}
         alt="Toyota"
-        className="h-14 md:h-16 object-contain"
+        className="h-10 md:h-16 object-contain"
       />
     </div>
 
     {/* Menu */}
-    <nav className="flex gap-4 md:gap-6 text-sm md:text-lg font-semibold overflow-x-auto">
+    <nav className="flex flex-wrap justify-center gap-3 text-xs font-semibold">
       <a href="#" className="text-white hover:text-red-500 transition">
         Beranda
       </a>
