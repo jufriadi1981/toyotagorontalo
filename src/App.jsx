@@ -222,7 +222,7 @@ const testimonials = [
   <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 h-[80px]">
 
    {/* Logo Hasjrat */}
-<div>
+<div className="bg-white rounded-lg px-2 py-1">
   <img
     src={hasjratLogo}
     alt="Hasjrat Toyota"
