@@ -230,7 +230,7 @@ const testimonials = [
     </div>
 
     {/* Menu */}
-    <nav className="hidden lg:flex gap-10 text-lg font-semibold">
+    <nav className="flex gap-4 md:gap-6 text-sm md:text-lg font-semibold overflow-x-auto">
       <a href="#" className="text-white hover:text-red-500 transition">
         Beranda
       </a>
