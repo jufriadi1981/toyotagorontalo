@@ -426,41 +426,41 @@ const testimonials = [
 
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
 
-  <div className="bg-black/60 border border-red-500/20 rounded-3xl p-5 text-center">
+  <div className="bg-black/60 border border-red-500/20 rounded-3xl p-4 text-center">
     <div className="text-4xl mb-3">⭐</div>
-    <h3 className="text-lg font-bold text-white">Dealer Resmi</h3>
+    <h3 className="text-base font-bold text-white">Dealer Resmi</h3>
     <p className="text-gray-400 text-sm mt-2">
       Transaksi aman & terpercaya
     </p>
   </div>
 
-  <div className="bg-black/60 border border-red-500/20 rounded-3xl p-5 text-center">
+  <div className="bg-black/60 border border-red-500/20 rounded-3xl p-4 text-center">
     <div className="text-4xl mb-3">🚗</div>
-    <h3 className="text-lg font-bold text-white">Ready Stock</h3>
+    <h3 className="text-base font-bold text-white">Ready Stock</h3>
     <p className="text-gray-400 text-sm mt-2">
       Unit tersedia setiap hari
     </p>
   </div>
 
-  <div className="bg-black/60 border border-red-500/20 rounded-3xl p-5 text-center">
+  <div className="bg-black/60 border border-red-500/20 rounded-3xl p-4 text-center">
     <div className="text-4xl mb-3">⚡</div>
-    <h3 className="text-lg font-bold text-white">Fast Response</h3>
+    <h3 className="text-base font-bold text-white">Fast Response</h3>
     <p className="text-gray-400 text-sm mt-2">
       Respon WhatsApp cepat
     </p>
   </div>
 
-  <div className="bg-black/60 border border-red-500/20 rounded-3xl p-5 text-center">
+  <div className="bg-black/60 border border-red-500/20 rounded-3xl p-4 text-center">
     <div className="text-4xl mb-3">💰</div>
-    <h3 className="text-lg font-bold text-white">DP Mulai 10%</h3>
+    <h3 className="text-base font-bold text-white">DP Mulai 10%</h3>
     <p className="text-gray-400 text-sm mt-2">
       Kredit ringan & fleksibel
     </p>
   </div>
 
-  <div className="bg-black/60 border border-red-500/20 rounded-3xl p-5 text-center">
+  <div className="bg-black/60 border border-red-500/20 rounded-3xl p-4 text-center">
     <div className="text-4xl mb-3">🔄</div>
-    <h3 className="text-lg font-bold text-white">Trade In</h3>
+    <h3 className="ttext-base font-bold text-white">Trade In</h3>
     <p className="text-gray-400 text-sm mt-2">
       Semua merek diterima
     </p>
