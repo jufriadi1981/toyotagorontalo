@@ -1045,9 +1045,13 @@ Saya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;
         Sales Executive Toyota
       </div>
 
-      <div className="text-xs text-green-600 font-semibold">
-        🟢 Online Sekarang
-      </div>
+      <div className="flex items-center gap-2 mt-1">
+  <span className="w-3 h-3 rounded-full bg-green-400 shadow-[0_0_12px_#4ade80,0_0_24px_#4ade80] animate-pulse"></span>
+
+  <span className="text-xs text-green-600 font-semibold">
+    Online Sekarang
+  </span>
+  </div>
     </div>
 
     <div className="bg-green-500 text-white px-4 py-2 rounded-xl font-bold text-sm">
