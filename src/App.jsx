@@ -546,13 +546,13 @@ const testimonials = [
  />
 
   {["Agya","Calya","Hilux Rangga"].includes(car.name) && (
-  <div className="absolute top-3 left-3 bg-gradient-to-r from-red-700 to-red-500 text-white px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider uppercase shadow-lg">
+  <div className="absolute bottom-2 left-2 md:top-3 md:left-3 md:bottom-auto bg-gradient-to-r from-red-700 to-red-500 text-white px-2 py-1 md:px-3 rounded-full text-[10px] md:text-[11px] font-semibold shadow-lg">
     Promo {monthYear}
   </div>
 )}
 
 {["Avanza","Veloz HV","Raize","Rush","Zenix HV"].includes(car.name) && (
-  <div className="absolute top-3 left-3 bg-gradient-to-r from-emerald-700 to-emerald-500 text-white px-3 py-1 rounded-full text-[11px] font-semibold shadow-lg">
+  <div className="absolute bottom-2 left-2 md:top-3 md:left-3 md:bottom-auto bg-gradient-to-r from-emerald-700 to-emerald-500 text-white px-2 py-1 md:px-3 rounded-full text-[10px] md:text-[11px] font-semibold shadow-lg">
     Program Proteksi
   </div>
 )}
