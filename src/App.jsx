@@ -1178,7 +1178,7 @@ onClick={() => {
   </div>
 
 </div>
-      <div className="grid grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-2 gap-3">
 
   <button
     onClick={() =>
@@ -1187,7 +1187,7 @@ onClick={() => {
         "_blank"
       )
     }
-    className="bg-black text-white py-4 rounded-2xl font-bold hover:bg-gray-800"
+    className="bg-black text-white py-3 rounded-xl font-bold hover:bg-gray-800"
   >
     🚗 Test Drive
   </button>
