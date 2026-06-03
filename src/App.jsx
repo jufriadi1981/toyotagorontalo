@@ -33,6 +33,7 @@ export default function LandingPage() {
   const [showTestimonials, setShowTestimonials] = useState(false);
   const [selectedTesti, setSelectedTesti] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   const [leadName, setLeadName] = useState("");
   const [leadPhone, setLeadPhone] = useState("");
@@ -230,7 +231,13 @@ const testimonials = [
     </div>
 
     {/* Menu */}
-    <nav className="flex flex-wrap justify-center gap-3 text-xs font-semibold">
+    <button
+  className="lg:hidden text-white text-3xl"
+  onClick={() => setMobileMenu(!mobileMenu)}
+>
+  ☰
+</button>
+      <nav className="hidden lg:flex gap-10 text-lg font-semibold">
       <a href="#" className="text-white hover:text-red-500 transition">
         Beranda
       </a>
