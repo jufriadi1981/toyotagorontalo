@@ -614,12 +614,12 @@ const testimonials = [
 <div className="max-w-3xl mx-auto">
 
   <div className="text-center mb-10">
-    <h2 className="text-5xl font-black mb-4">
-      Chat WhatsApp Sekarang
+    <h2 className="text-3xl md:text-5xl font-black mb-4">
+    Dapatkan Penawaran Toyota Terbaik
     </h2>
 
-    <p className="text-gray-400">
-      Dapatkan promo terbaik, simulasi kredit, dan informasi ketersediaan unit Toyota.
+    <p className="text-gray-400 text-sm md:text-base">
+    Isi data di bawah ini dan Sales Executive Toyota akan menghubungi Anda melalui WhatsApp.
     </p>
   </div>
 
