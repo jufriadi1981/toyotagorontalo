@@ -1010,11 +1010,12 @@ Saya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;
       <div className="mt-2 bg-green-500 text-white text-xs px-3 py-1 rounded-full font-bold">
         WhatsApp
       </div>
-      <p className="text-green-400 text-xs mt-1 animate-pulse">
-        🟢 Online Sekarang
-      </p>
-    </div>
-  </div>
+      <div className="flex items-center gap-2 mt-1">
+  <span className="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse"></span>
+
+  <span className="text-xs font-medium text-green-500">
+    Online Sekarang
+  </span>
 </div>
 
 <footer className="py-8 text-center text-gray-500 border-t border-white/10 bg-black">
