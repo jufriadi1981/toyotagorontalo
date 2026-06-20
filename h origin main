@@ -1,0 +1,1639 @@
+warning: in the working copy of 'src/App.jsx', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/src/App.jsx b/src/App.jsx[m
+[1mindex 3cd117c..0ea384b 100644[m
+[1m--- a/src/App.jsx[m
+[1m+++ b/src/App.jsx[m
+[36m@@ -10,91 +10,233 @@[m [mimport raize from "./assets/raize.png";[m
+ import rush from "./assets/rush.png";[m
+ import zenix from "./assets/zenix.png";[m
+ import rangga from "./assets/rangga.png";[m
+[31m-import aftersalesLogo from "./assets/aftersales.png";[m
+[31m-import tradeinLogo from "./assets/tradein.png";[m
+[31m-import toyotaLogo from "./assets/logo.png";[m
+[31m-import testi1 from "./assets/testi1.png";[m
+[31m-import testi2 from "./assets/testi2.png";[m
+[31m-import testi3 from "./assets/testi3.png";[m
+[31m-import testi4 from "./assets/testi4.png";[m
+[31m-import testi5 from "./assets/testi5.png";[m
+[31m-import testi6 from "./assets/testi6.png";[m
+[31m-import tradein from "./assets/tradein.png";[m
+[31m-import se from "./assets/se.png";[m
+[31m-import servis from "./assets/servis.png";[m
+[31m-import setia from "./assets/setia.png";[m
+[31m-import testdrive from "./assets/testdrive.png";[m
+[31m-[m
+[32m+[m[32mimport yarisCross from "./assets/products/Yaris-Cross.png";[m
+[32m+[m[32mimport reborn from "./assets/products/innova-reborn.png";[m
+[32m+[m[32mimport fortuner from "./assets/products/Fortuner.png";[m
+[32m+[m[32mimport hiluxDc from "./assets/products/Hilux-Dc.png";[m
+[32m+[m[32mimport slider01 from "./assets/banners/slider-01.jpeg";[m
+[32m+[m[32mimport slider02 from "./assets/banners/slider-02.jpeg";[m
+[32m+[m[32mimport slider03 from "./assets/banners/slider-03.jpeg";[m
+[32m+[m[32mimport slider04 from "./assets/banners/slider-04.jpeg";[m
+[32m+[m
+[32m+[m
+[32m+[m[32m// HAYATUL KIROM[m
+[32m+[m[32mimport hayatulPhoto from "./assets/sales/hayatul-kirom/hayatul-kirom.jpeg";[m
+[32m+[m[32mimport hayatul01 from "./assets/sales/hayatul-kirom/dec-hayatul-01.jpeg";[m
+[32m+[m[32mimport hayatul02 from "./assets/sales/hayatul-kirom/dec-hayatul-02.jpeg";[m
+[32m+[m[32mimport hayatul03 from "./assets/sales/hayatul-kirom/dec-hayatul-03.jpeg";[m
+[32m+[m[32mimport hayatul04 from "./assets/sales/hayatul-kirom/dec-hayatul-04.jpeg";[m
+[32m+[m[32mimport hayatul05 from "./assets/sales/hayatul-kirom/dec-hayatul-05.jpeg";[m
+[32m+[m[32mimport hayatul06 from "./assets/sales/hayatul-kirom/dec-hayatul-06.jpeg";[m
+[32m+[m
+[32m+[m[32m// NOVITA HUSIN[m
+[32m+[m[32mimport novitaPhoto from "./assets/sales/novita-husin/novita-husin.jpeg";[m
+[32m+[m[32mimport novita01 from "./assets/sales/novita-husin/dec-novita-01.jpeg";[m
+[32m+[m[32mimport novita02 from "./assets/sales/novita-husin/dec-novita-02.jpeg";[m
+[32m+[m[32mimport novita03 from "./assets/sales/novita-husin/dec-novita-03.jpeg";[m
+[32m+[m[32mimport novita04 from "./assets/sales/novita-husin/dec-novita-04.jpeg";[m
+[32m+[m[32mimport novita05 from "./assets/sales/novita-husin/dec-novita-05.jpeg";[m
+[32m+[m[32mimport novita06 from "./assets/sales/novita-husin/dec-novita-06.jpeg";[m
+[32m+[m
+[32m+[m[32m// IRWAN LATEDU[m
+[32m+[m[32mimport irwanPhoto from "./assets/sales/irwan-latedu/irwan-latedu.jpeg";[m
+[32m+[m[32mimport irwan01 from "./assets/sales/irwan-latedu/dec-irwan-01.jpeg";[m
+[32m+[m[32mimport irwan02 from "./assets/sales/irwan-latedu/dec-irwan-02.jpeg";[m
+[32m+[m[32mimport irwan03 from "./assets/sales/irwan-latedu/dec-irwan-03.jpeg";[m
+[32m+[m[32mimport irwan04 from "./assets/sales/irwan-latedu/dec-irwan-04.jpeg";[m
+[32m+[m[32mimport irwan05 from "./assets/sales/irwan-latedu/dec-irwan-05.jpeg";[m
+[32m+[m[32mimport irwan06 from "./assets/sales/irwan-latedu/dec-irwan-06.jpeg";[m
+[32m+[m
+[32m+[m[32m// DAVID DWIYAHYA[m
+[32m+[m[32mimport davidPhoto from "./assets/sales/david-dwiyahya/david-dwiyahya.jpeg";[m
+[32m+[m[32mimport david01 from "./assets/sales/david-dwiyahya/dec-david-01.jpeg";[m
+[32m+[m[32mimport david02 from "./assets/sales/david-dwiyahya/dec-david-02.jpeg";[m
+[32m+[m[32mimport david03 from "./assets/sales/david-dwiyahya/dec-david-03.jpeg";[m
+[32m+[m[32mimport david04 from "./assets/sales/david-dwiyahya/dec-david-04.jpeg";[m
+[32m+[m[32mimport david05 from "./assets/sales/david-dwiyahya/dec-david-05.jpeg";[m
+[32m+[m[32mimport david06 from "./assets/sales/david-dwiyahya/dec-david-06.jpeg";[m
+[32m+[m
+[32m+[m[32m// REFLIYANTO JUSUF[m
+[32m+[m[32mimport refliyantoPhoto from "./assets/sales/refliyanto-jusuf/refliyanto-jusuf.jpeg";[m
+[32m+[m[32mimport refliyanto01 from "./assets/sales/refliyanto-jusuf/dec-refliyanto-01.jpeg";[m
+[32m+[m[32mimport refliyanto02 from "./assets/sales/refliyanto-jusuf/dec-refliyanto-02.jpeg";[m
+[32m+[m[32mimport refliyanto03 from "./assets/sales/refliyanto-jusuf/dec-refliyanto-03.jpeg";[m
+[32m+[m[32mimport refliyanto04 from "./assets/sales/refliyanto-jusuf/dec-refliyanto-04.jpeg";[m
+[32m+[m[32mimport refliyanto05 from "./assets/sales/refliyanto-jusuf/dec-refliyanto-05.jpeg";[m
+[32m+[m[32mimport refliyanto06 from "./assets/sales/refliyanto-jusuf/dec-refliyanto-06.jpeg";[m
+[32m+[m
+[32m+[m[32m// DEFCHI ISMAIL[m
+[32m+[m[32mimport defchiPhoto from "./assets/sales/defchi-ismail/defchi-ismail.jpeg";[m
+[32m+[m[32mimport defchi01 from "./assets/sales/defchi-ismail/dec-defchi-01.jpeg";[m
+[32m+[m[32mimport defchi02 from "./assets/sales/defchi-ismail/dec-defchi-02.jpeg";[m
+[32m+[m[32mimport defchi03 from "./assets/sales/defchi-ismail/dec-defchi-03.jpeg";[m
+[32m+[m[32mimport defchi04 from "./assets/sales/defchi-ismail/dec-defchi-04.jpeg";[m
+[32m+[m[32mimport defchi05 from "./assets/sales/defchi-ismail/dec-defchi-05.jpeg";[m
+[32m+[m[32mimport defchi06 from "./assets/sales/defchi-ismail/dec-defchi-06.jpeg";[m
+ [m
+ export default function LandingPage() {[m
+   const [selectedSimulasi, setSelectedSimulasi] = useState(null);[m
+[31m-  const [selectedTenor, setSelectedTenor] = useState(60);[m
+[32m+[m[32m  const [selectedTenor, setSelectedTenor] = useState(60);[m[41m  [m
+   const [selectedCar, setSelectedCar] = useState(null);[m
+[32m+[m[32m  const [showPriceList, setShowPriceList] = useState(false);[m
+   const [showTestimonials, setShowTestimonials] = useState(false);[m
+   const [selectedTesti, setSelectedTesti] = useState(null);[m
+   const [currentSlide, setCurrentSlide] = useState(0);[m
+   const [mobileMenu, setMobileMenu] = useState(false);[m
+[31m-[m
+   const [leadName, setLeadName] = useState("");[m
+   const [leadPhone, setLeadPhone] = useState("");[m
+   const [leadUnit, setLeadUnit] = useState("");[m
+   const currentDate = new Date();[m
+[31m-[m
+   const monthYear = currentDate.toLocaleDateString("id-ID", {[m
+   month: "long",[m
+   year: "numeric",[m
+ });[m
+ [m
+   const heroSlides = [[m
+[31m-  tradein,[m
+[31m-  testdrive,[m
+[31m-  servis,[m
+[31m-  setia,[m
+[31m-  se,[m
+[32m+[m[32m  slider01,[m
+[32m+[m[32m  slider02,[m
+[32m+[m[32m  slider03,[m
+[32m+[m[32m  slider04,[m
+ ];[m
+[31m-const testimonials = [[m
+[31m-    {[m
+[31m-      image: testi1,[m
+[31m-      name: "Bapak Andi",[m
+[31m-      unit: "Pembelian Avanza",[m
+[31m-      text: "Pelayanan sangat ramah dan proses kredit sangat cepat.",[m
+[31m-    },[m
+[31m-    {[m
+[31m-      image: testi2,[m
+[31m-      name: "Ibu Rina",[m
+[31m-      unit: "Pembelian Raize",[m
+[31m-      text: "Sales responsif dan unit langsung ready. Sangat puas.",[m
+[31m-    },[m
+[31m-    {[m
+[31m-      image: testi3,[m
+[31m-      name: "Pak Fajar",[m
+[31m-      unit: "Pembelian Zenix Hybrid",[m
+[31m-      text: "Penjelasan detail dan pelayanan sangat profesional.",[m
+[31m-    },[m
+[31m-  {[m
+[31m-  image: testi4,[m
+[31m-  name: "Customer 4",[m
+[31m-  unit: "Serah Terima Unit Toyota",[m
+[31m-  text: "Pelayanan ramah dan profesional.",[m
+[31m-},[m
+[31m-{[m
+[31m-  image: testi5,[m
+[31m-  name: "Customer 5",[m
+[31m-  unit: "Serah Terima Unit Toyota",[m
+[31m-  text: "Unit diterima dengan baik.",[m
+[31m-},[m
+[31m-{[m
+[31m-  image: testi6,[m
+[31m-  name: "Customer 6",[m
+[31m-  unit: "Serah Terima Unit Toyota",[m
+[31m-  text: "Rekomendasi sales Toyota terbaik.",[m
+[31m-},[m
+[31m-  ];[m
+[31m-  [m
+ [m
+[32m+[m[32mconst salesConfig = {[m
+[32m+[m[32m  hayatul: {[m
+[32m+[m[32m    nama: "Hayatul Kirom, A.Md",[m
+[32m+[m[32m    jabatan: "Sales Executive",[m
+[32m+[m[32m    wa: "6282340002917",[m
+[32m+[m[32m    photo: hayatulPhoto,[m
+[32m+[m[32m  },[m
+[32m+[m
+[32m+[m[32m  novita: {[m
+[32m+[m[32m    nama: "Novita Husin, S.KM",[m
+[32m+[m[32m    jabatan: "Counter Sales",[m
+[32m+[m[32m    wa: "6281243416272",[m
+[32m+[m[32m    photo: novitaPhoto,[m
+[32m+[m[32m  },[m
+[32m+[m
+[32m+[m[32m  irwan: {[m
+[32m+[m[32m    nama: "Irwan Latedu, S.Sos",[m
+[32m+[m[32m    jabatan: "Sales Executive",[m
+[32m+[m[32m    wa: "6281328108397",[m
+[32m+[m[32m    photo: irwanPhoto,[m
+[32m+[m[32m  },[m
+[32m+[m
+[32m+[m[32m  david: {[m
+[32m+[m[32m    nama: "David Dwiyahya M. Tuna, S.P",[m
+[32m+[m[32m    jabatan: "Sales Executive",[m
+[32m+[m[32m    wa: "6282259594051",[m
+[32m+[m[32m    photo: davidPhoto,[m
+[32m+[m[32m  },[m
+[32m+[m
+[32m+[m[32m  refliyanto: {[m
+[32m+[m[32m    nama: "Refliyanto Jusuf, S.Pd",[m
+[32m+[m[32m    jabatan: "Sales Executive",[m
+[32m+[m[32m    wa: "6285246236072",[m
+[32m+[m[32m    photo: refliyantoPhoto,[m
+[32m+[m[32m  },[m
+[32m+[m
+[32m+[m[32m  defchi: {[m
+[32m+[m[32m    nama: "Defchi Ismail, S.SI",[m
+[32m+[m[32m    jabatan: "Sales Executive",[m
+[32m+[m[32m    wa: "6285240014449",[m
+[32m+[m[32m    photo: defchiPhoto,[m
+[32m+[m[32m  },[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32mconst testimonialsConfig = {[m
+[32m+[m[32m  hayatul: [[m
+[32m+[m[32m    { image: hayatul01, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: hayatul02, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: hayatul03, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: hayatul04, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: hayatul05, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: hayatul06, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m  ],[m
+[32m+[m
+[32m+[m[32m  novita: [[m
+[32m+[m[32m    { image: novita01, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: novita02, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: novita03, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: novita04, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: novita05, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: novita06, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m  ],[m
+[32m+[m
+[32m+[m[32m  irwan: [[m
+[32m+[m[32m    { image: irwan01, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: irwan02, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: irwan03, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: irwan04, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: irwan05, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: irwan06, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m  ],[m
+[32m+[m
+[32m+[m[32m  david: [[m
+[32m+[m[32m    { image: david01, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: david02, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: david03, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: david04, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: david05, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: david06, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m  ],[m
+[32m+[m
+[32m+[m[32m  refliyanto: [[m
+[32m+[m[32m    { image: refliyanto01, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: refliyanto02, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: refliyanto03, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: refliyanto04, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: refliyanto05, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: refliyanto06, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m  ],[m
+[32m+[m
+[32m+[m[32m  defchi: [[m
+[32m+[m[32m    { image: defchi01, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: defchi02, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: defchi03, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: defchi04, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: defchi05, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m    { image: defchi06, name: "Customer Toyota", unit: "Serah Terima Unit Toyota" },[m
+[32m+[m[32m  ],[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32mconst hostname = window.location.hostname;[m
+[32m+[m[32mconst currentUrl = window.location.origin;[m
+[32m+[m
+[32m+[m[32museEffect(() => {[m
+[32m+[m[32m  console.log("Hostname:", hostname);[m
+[32m+[m[32m  console.log("Current URL:", currentUrl);[m
+[32m+[m[32m}, []);[m
+[32m+[m
+[32m+[m[32mlet currentSales = salesConfig.hayatul;[m
+[32m+[m[32mlet testimonials = testimonialsConfig.hayatul;[m
+[32m+[m
+[32m+[m[32mif (hostname.includes("gorontalotoyota.net")) {[m
+[32m+[m[32m  currentSales = salesConfig.novita;[m
+[32m+[m[32m  testimonials = testimonialsConfig.novita;[m
+[32m+[m[32m}[m
+[32m+[m[32mif (hostname.includes("gorontalotoyota.id")) {[m
+[32m+[m[32m  currentSales = salesConfig.irwan;[m
+[32m+[m[32m  testimonials = testimonialsConfig.irwan;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mif (hostname.includes("toyota-gorontalo.com")) {[m
+[32m+[m[32m  currentSales = salesConfig.david;[m
+[32m+[m[32m  testimonials = testimonialsConfig.david;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mif (hostname.includes("toyotagorontalo.id")) {[m
+[32m+[m[32m  currentSales = salesConfig.refliyanto;[m
+[32m+[m[32m  testimonials = testimonialsConfig.refliyanto;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mif (hostname.includes("toyotagorontalo.com")) {[m
+[32m+[m[32m  currentSales = salesConfig.defchi;[m
+[32m+[m[32m  testimonials = testimonialsConfig.defchi;[m
+[32m+[m[32m}[m
+   const cars = [[m
+[32m+[m[41m  [m
+   {[m
+[31m-    name: "Agya",[m
+[32m+[m[32m    name: "All New Agya",[m
+     image: agya,[m
+     desc: "City Car Modern untuk Mobilitas Harian",[m
+     price: "Rp 209.100.000",[m
+[36m@@ -108,7 +250,7 @@[m [mconst testimonials = [[m
+   },[m
+ [m
+   {[m
+[31m-    name: "Calya",[m
+[32m+[m[32m    name: "All New Calya",[m
+     image: calya,[m
+     desc: "MPV Keluarga Irit dan Nyaman",[m
+     price: "Rp 207.000.000",[m
+[36m@@ -122,7 +264,7 @@[m [mconst testimonials = [[m
+   },[m
+ [m
+   {[m
+[31m-    name: "Avanza",[m
+[32m+[m[32m    name: "All New Avanza",[m
+     image: avanza,[m
+     desc: "Mobil Keluarga Favorit Indonesia",[m
+     price: "Rp 290.500.000",[m
+[36m@@ -136,7 +278,7 @@[m [mconst testimonials = [[m
+   },[m
+ [m
+   {[m
+[31m-  name: "Veloz HV",[m
+[32m+[m[32m  name: "Veloz HEV",[m
+   image: veloz,[m
+   desc: "MPV Premium dengan Teknologi Hybrid",[m
+   price: "Rp 333.000.000",[m
+[36m@@ -150,7 +292,7 @@[m [mconst testimonials = [[m
+ },[m
+ [m
+   {[m
+[31m-     name: "Raize",[m
+[32m+[m[32m     name: "All New Raize",[m
+   image: raize,[m
+   desc: "SUV Compact Modern dan Stylish",[m
+   price: "Rp 291.200.000",[m
+[36m@@ -164,11 +306,11 @@[m [mconst testimonials = [[m
+   },[m
+ [m
+   {[m
+[31m-    name: "Rush",[m
+[31m-  image: rush,[m
+[31m-  desc: "SUV Tangguh untuk Keluarga Aktif",[m
+[31m-  price: "Rp 341.400.000",[m
+[31m-  dp: "Rp 17.700.000",[m
+[32m+[m[32m    name: "All New Rush",[m
+[32m+[m[32m   image: rush,[m
+[32m+[m[32m    desc: "SUV Tangguh untuk Keluarga Aktif",[m
+[32m+[m[32m    price: "Rp 341.400.000",[m
+[32m+[m[32m   dp: "Rp 17.700.000",[m
+ [m
+   tenor12: "Rp 28.200.000",[m
+   tenor24: "Rp 15.500.000",[m
+[36m@@ -178,10 +320,10 @@[m [mconst testimonials = [[m
+   },[m
+ [m
+ {[m
+[31m-  name: "Zenix HV",[m
+[32m+[m[32m  name: "Zenix HEV",[m
+   image: zenix,[m
+   desc: "Hybrid Premium dengan Teknologi Masa Depan",[m
+[31m-  price: "Rp 534.400.000",[m
+[32m+[m[32m  price: "Rp 493.300.000",[m
+   dp: "Rp 59.000.000",[m
+ [m
+   tenor12: "Rp 44.200.000",[m
+[36m@@ -204,7 +346,168 @@[m [mconst testimonials = [[m
+   tenor48: "Rp 6.360.000",[m
+   tenor60: "Rp 5.989.000",[m
+ },[m
+[32m+[m[32m{[m
+[32m+[m[32m  name: "Yaris Cross Hev",[m
+[32m+[m[32m  desc: "SUV Hybrid Stylish dan Irit untuk Keluarga Aktif",[m
+[32m+[m[32m  image: yarisCross,[m
+[32m+[m[32m  price: "Rp 410.600.000",[m
+[32m+[m[32m  dp: "Rp 40.100.000",[m
+[32m+[m[32m  tenor12: "31.819.000",[m
+[32m+[m[32m  tenor24: "17.441.000",[m
+[32m+[m[32m  tenor36: "12.682.000",[m
+[32m+[m[32m  tenor48: "10.395.000",[m
+[32m+[m[32m  tenor60: "9.230.000",[m
+[32m+[m[32m},[m
+[32m+[m
+[32m+[m[32m{[m
+[32m+[m[32m  name: "Innova Reborn",[m
+[32m+[m[32m  desc: "Legenda Diesel Toyota yang Nyaman dan Bertenaga",[m
+[32m+[m[32m  image: reborn,[m
+[32m+[m[32m  price: "Rp 472.700.000",[m
+[32m+[m[32m  dp: "Rp 49.500.000",[m
+[32m+[m[32m  tenor12: "36.647.000",[m
+[32m+[m[32m  tenor24: "20.102.000",[m
+[32m+[m[32m  tenor36: "14.625.000",[m
+[32m+[m[32m  tenor48: "11.989.000",[m
+[32m+[m[32m  tenor60: "10.648.000",[m
+[32m+[m[32m},[m
+[32m+[m
+[32m+[m[32m{[m
+[32m+[m[32m  name: "Fortuner 2.8",[m
+[32m+[m[32m  desc: "SUV Premium yang Siap Menaklukkan Setiap Perjalanan",[m
+[32m+[m[32m  image: fortuner,[m
+[32m+[m[32m  price: "Rp 648.300.000",[m
+[32m+[m[32m  dp: "Rp 70.800.000",[m
+[32m+[m[32m  tenor12: "50.209.000",[m
+[32m+[m[32m  tenor24: "27.323.000",[m
+[32m+[m[32m  tenor36: "19.777.000",[m
+[32m+[m[32m  tenor48: "16.149.000",[m
+[32m+[m[32m  tenor60: "14.281.000",[m
+[32m+[m[32m},[m
+[32m+[m
+[32m+[m[32m{[m
+[32m+[m[32m  name: "Hilux Double Cabin",[m
+[32m+[m[32m  desc: "Tangguh di Proyek, Nyaman untuk Aktivitas Harian",[m
+[32m+[m[32m  image: hiluxDc,[m
+[32m+[m[32m  price: "Rp 511.800.000",[m
+[32m+[m[32m  dp: "Rp 60.300.000",[m
+[32m+[m[32m  tenor12: "40.150.000",[m
+[32m+[m[32m  tenor24: "22.089.000",[m
+[32m+[m[32m  tenor36: "16.107.000",[m
+[32m+[m[32m  tenor48: "13.227.000",[m
+[32m+[m[32m  tenor60: "11.760.000",[m
+[32m+[m[32m},[m
+ ];[m
+[32m+[m
+[32m+[m[32mconst carVariants = {[m
+[32m+[m[32m  "All New Agya": [[m
+[32m+[m[32m    { type: "AGYA 1.2 E M/T", price: "Rp 209.100.000" },[m
+[32m+[m[32m    { type: "AGYA 1.2 G M/T", price: "Rp 217.400.000" },[m
+[32m+[m[32m    { type: "AGYA 1.2 G CVT", price: "Rp 236.100.000" },[m
+[32m+[m[32m    { type: "AGYA 1.2 G M/T LUX", price: "Rp 225.200.000" },[m
+[32m+[m[32m    { type: "AGYA STYLIX 1.2 G CVT", price: "Rp 240.700.000" },[m
+[32m+[m[32m  ],[m
+[32m+[m[32m"All New Calya": [[m
+[32m+[m[32m  { type: "CALYA 1.2 E STD M/T", price: "Rp 207.000.000" },[m
+[32m+[m[32m  { type: "CALYA 1.2 E M/T", price: "Rp 209.300.000" },[m
+[32m+[m[32m  { type: "CALYA 1.2 G M/T", price: "Rp 215.500.000" },[m
+[32m+[m[32m  { type: "CALYA 1.2 G A/T", price: "Rp 230.800.000" },[m
+[32m+[m[32m  { type: "CALYA 1.2 G M/T LUX", price: "Rp 218.500.000" },[m
+[32m+[m[32m  { type: "CALYA 1.2 G A/T LUX", price: "Rp 233.800.000" },[m
+[32m+[m[32m],[m
+[32m+[m
+[32m+[m[32m"All New Avanza": [[m
+[32m+[m[32m  { type: "AVANZA 1.3 E M/T", price: "Rp 290.500.000" },[m
+[32m+[m[32m  { type: "AVANZA 1.3 E CVT", price: "Rp 305.900.000" },[m
+[32m+[m[32m  { type: "AVANZA 1.5 G M/T", price: "Rp 315.900.000" },[m
+[32m+[m[32m  { type: "AVANZA 1.5 G CVT", price: "Rp 331.600.000" },[m
+[32m+[m[32m],[m
+[32m+[m
+[32m+[m[32m"Veloz HEV": [[m
+[32m+[m[32m  { type: "VELOZ 1.5 V HV CVT Non Premium", price: "Rp 333.000.000" },[m
+[32m+[m[32m  { type: "VELOZ 1.5 V HV CVT Premium", price: "Rp 334.500.000" },[m
+[32m+[m[32m  { type: "VELOZ 1.5 Q HV CVT Non Premium", price: "Rp 348.000.000" },[m
+[32m+[m[32m  { type: "VELOZ 1.5 Q HV CVT Premium", price: "Rp 349.500.000" },[m
+[32m+[m[32m],[m
+[32m+[m
+[32m+[m[32m"All New Rush": [[m
+[32m+[m[32m  { type: "RUSH 1.5 G M/T", price: "Rp 341.400.000" },[m
+[32m+[m[32m  { type: "RUSH 1.5 G A/T", price: "Rp 353.000.000" },[m
+[32m+[m[32m  { type: "RUSH 1.5 S M/T GR SPORT", price: "Rp 357.700.000" },[m
+[32m+[m[32m  { type: "RUSH 1.5 S A/T GR SPORT", price: "Rp 369.900.000" },[m
+[32m+[m[32m],[m
+[32m+[m
+[32m+[m[32m"All New Raize": [[m
+[32m+[m[32m  { type: "RAIZE 1.2 G M/T", price: "Rp 291.200.000" },[m
+[32m+[m[32m  { type: "RAIZE 1.2 G CVT", price: "Rp 307.500.000" },[m
+[32m+[m[32m  { type: "RAIZE 1.0T G M/T", price: "Rp 312.100.000" },[m
+[32m+[m[32m  { type: "RAIZE 1.0T G CVT", price: "Rp 327.900.000" },[m
+[32m+[m[32m  { type: "RAIZE 1.0T GR SPORT CVT", price: "Rp 342.700.000" },[m
+[32m+[m[32m  { type: "RAIZE 1.0T GR SPORT CVT TWO TONE", price: "Rp 345.400.000" },[m
+[32m+[m[32m  { type: "RAIZE 1.0T GR SPORT CVT TSS", price: "Rp 369.800.000" },[m
+[32m+[m[32m],[m
+[32m+[m[32m"Yaris Cross Hev": [[m
+[32m+[m[32m  { type: "YARIS CROSS 1.5 G HV CVT", price: "Rp 452.800.000" },[m
+[32m+[m[32m  { type: "YARIS CROSS 1.5 G HV CVT Premium", price: "Rp 455.500.000" },[m
+[32m+[m[32m  { type: "YARIS CROSS 1.5 G HV CVT Dual Tone", price: "Rp 457.100.000" },[m
+[32m+[m[32m  { type: "YARIS CROSS 1.5 G HV CVT Dual Tone Premium", price: "Rp 458.000.000" },[m
+[32m+[m[32m  { type: "YARIS CROSS 1.5 S HV CVT TSS", price: "Rp 502.900.000" },[m
+[32m+[m[32m  { type: "YARIS CROSS 1.5 S HV CVT TSS Premium", price: "Rp 504.200.000" },[m
+[32m+[m[32m  { type: "YARIS CROSS 1.5 S HV CVT TSS Dual Tone", price: "Rp 506.900.000" },[m
+[32m+[m[32m  { type: "YARIS CROSS 1.5 S HV CVT TSS Dual Tone Premium", price: "Rp 508.000.000" },[m
+[32m+[m[32m  { type: "YARIS CROSS 1.5 S HV CVT TSS GR Package", price: "Rp 512.400.000" },[m
+[32m+[m[32m  { type: "YARIS CROSS 1.5 S HV CVT TSS GR Package Premium", price: "Rp 514.900.000" },[m
+[32m+[m[32m  { type: "YARIS CROSS 1.5 S HV CVT TSS GR Package Dual Tone", price: "Rp 516.400.000" },[m
+[32m+[m[32m  { type: "YARIS CROSS 1.5 S HV CVT TSS GR Package Dual Tone Premium", price: "Rp 517.400.000" },[m
+[32m+[m[32m],[m
+[32m+[m[32m"Innova Reborn": [[m
+[32m+[m[32m  { type: "INNOVA 2.4 G M/T DIESEL", price: "Rp 472.700.000" },[m
+[32m+[m[32m  { type: "INNOVA 2.4 G A/T DIESEL", price: "Rp 495.900.000" },[m
+[32m+[m[32m],[m
+[32m+[m[32m"Zenix HEV": [[m
+[32m+[m[32m  { type: "INNOVA ZENIX 2.0 G CVT", price: "Rp 493.300.000" },[m
+[32m+[m[32m  { type: "INNOVA ZENIX 2.0 G CVT Premium", price: "Rp 496.300.000" },[m
+[32m+[m[32m  { type: "INNOVA ZENIX 2.0 V CVT", price: "Rp 542.900.000" },[m
+[32m+[m[32m  { type: "INNOVA ZENIX 2.0 V CVT Premium", price: "Rp 545.900.000" },[m
+[32m+[m[32m  { type: "INNOVA ZENIX 2.0 G HV CVT", price: "Rp 534.400.000" },[m
+[32m+[m[32m  { type: "INNOVA ZENIX 2.0 G HV CVT Premium", price: "Rp 537.400.000" },[m
+[32m+[m[32m  { type: "INNOVA ZENIX 2.0 V HV CVT MODELLISTA", price: "Rp 612.500.000" },[m
+[32m+[m[32m  { type: "INNOVA ZENIX 2.0 V HV CVT MODELLISTA Premium", price: "Rp 615.400.000" },[m
+[32m+[m[32m  { type: "INNOVA ZENIX 2.0 Q HV CVT TSS MODELLISTA", price: "Rp 695.800.000" },[m
+[32m+[m[32m  { type: "INNOVA ZENIX 2.0 Q HV CVT TSS MODELLISTA Premium", price: "Rp 698.700.000" },[m
+[32m+[m[32m],[m
+[32m+[m[32m"Fortuner 2.8": [[m
+[32m+[m[32m  { type: "FORTUNER 2.4 G 4x2 M/T", price: "Rp 648.300.000" },[m
+[32m+[m[32m  { type: "FORTUNER 2.4 G 4x2 A/T", price: "Rp 667.700.000" },[m
+[32m+[m[32m  { type: "FORTUNER 2.7 SRZ GR PARTS AERO 4x2 A/T", price: "Rp 704.000.000" },[m
+[32m+[m[32m  { type: "FORTUNER 2.7 SRZ GR PARTS AERO Premium", price: "Rp 707.100.000" },[m
+[32m+[m[32m  { type: "FORTUNER 2.7 SRZ GR PARTS AERO Two Tone", price: "Rp 709.200.000" },[m
+[32m+[m[32m  { type: "FORTUNER 2.8 VRZ 4x2 A/T", price: "Rp 723.200.000" },[m
+[32m+[m[32m  { type: "FORTUNER 2.8 VRZ TSS 4x2 A/T", price: "Rp 738.500.000" },[m
+[32m+[m[32m  { type: "FORTUNER 2.8 VRZ GR PARTS TSS", price: "Rp 749.700.000" },[m
+[32m+[m[32m  { type: "FORTUNER 2.8 VRZ GR PARTS TSS Premium", price: "Rp 752.900.000" },[m
+[32m+[m[32m  { type: "FORTUNER 2.8 VRZ GR PARTS TSS Two Tone", price: "Rp 755.100.000" },[m
+[32m+[m[32m  { type: "FORTUNER 2.8 VRZ 4x4 A/T", price: "Rp 839.400.000" },[m
+[32m+[m[32m  { type: "FORTUNER 2.8 VRZ 4x4 GR SPORT TSS", price: "Rp 870.200.000" },[m
+[32m+[m[32m  { type: "FORTUNER 2.8 VRZ 4x4 GR SPORT TSS Two Tone", price: "Rp 875.200.000" },[m
+[32m+[m[32m],[m
+[32m+[m[32m"Hilux Rangga": [[m
+[32m+[m[32m  { type: "RANGGA 2.0 STANDARD M/T", price: "Rp 236.500.000" },[m
+[32m+[m[32m  { type: "RANGGA 2.0 STANDARD M/T 3 WAY", price: "Rp 237.600.000" },[m
+[32m+[m[32m  { type: "RANGGA 2.0 HIGH M/T", price: "Rp 262.900.000" },[m
+[32m+[m[32m  { type: "RANGGA 2.4 DSL STANDARD M/T", price: "Rp 294.600.000" },[m
+[32m+[m[32m  { type: "RANGGA 2.4 DSL STANDARD M/T 3 WAY", price: "Rp 296.400.000" },[m
+[32m+[m[32m  { type: "RANGGA 2.4 DSL HIGH M/T", price: "Rp 333.400.000" },[m
+[32m+[m[32m  { type: "RANGGA 2.4 DSL HIGH A/T", price: "Rp 355.600.000" },[m
+[32m+[m[32m],[m
+[32m+[m
+[32m+[m[32m "Hilux Double Cabin": [[m
+[32m+[m[32m  { type: "HILUX D-CAB 2.4 E (4x4) DSL M/T", price: "Rp 511.800.000" },[m
+[32m+[m[32m  { type: "HILUX D-CAB 2.4 G (4x4) DSL M/T", price: "Rp 547.500.000" },[m
+[32m+[m[32m  { type: "HILUX D-CAB 2.4 V (4x4) DSL A/T", price: "Rp 606.300.000" },[m
+[32m+[m[32m],[m
+[32m+[m
+[32m+[m[32m};[m
+   useEffect(() => {[m
+   const timer = setInterval(() => {[m
+     setCurrentSlide((prev) =>[m
+[36m@@ -215,42 +518,145 @@[m [mconst testimonials = [[m
+   return () => clearInterval(timer);[m
+ }, []);[m
+ [m
+[32m+[m[32museEffect(() => {[m
+[32m+[m[32m  document.title = `Promo Toyota Gorontalo | ${currentSales.nama}`;[m
+[32m+[m
+[32m+[m[32m  const description =[m
+[32m+[m[32m    `Promo Toyota Gorontalo bersama ${currentSales.nama}. DP ringan, kredit mudah, trade in dan promo Toyota terbaru di Gorontalo.`;[m
+[32m+[m
+[32m+[m[32m  let metaDescription = document.querySelector([m
+[32m+[m[32m    'meta[name="description"]'[m
+[32m+[m[32m  );[m
+[32m+[m
+[32m+[m[32m  if (metaDescription) {[m
+[32m+[m[32m    metaDescription.setAttribute("content", description);[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  const ogTitle = document.querySelector([m
+[32m+[m[32m  'meta[property="og:title"]'[m
+[32m+[m[32m);[m
+[32m+[m
+[32m+[m[32mif (ogTitle) {[m
+[32m+[m[32m  ogTitle.setAttribute([m
+[32m+[m[32m    "content",[m
+[32m+[m[32m    `Promo Toyota Gorontalo | ${currentSales.nama}`[m
+[32m+[m[32m  );[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mconst ogDescription = document.querySelector([m
+[32m+[m[32m  'meta[property="og:description"]'[m
+[32m+[m[32m);[m
+[32m+[m
+[32m+[m[32mif (ogDescription) {[m
+[32m+[m[32m  ogDescription.setAttribute([m
+[32m+[m[32m    "content",[m
+[32m+[m[32m    description[m
+[32m+[m[32m  );[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mconst schema = document.querySelector([m
+[32m+[m[32m  'script[type="application/ld+json"]'[m
+[32m+[m[32m);[m
+[32m+[m
+[32m+[m[32mif (schema) {[m
+[32m+[m[32m  const data = JSON.parse(schema.textContent);[m
+[32m+[m
+[32m+[m[32m  data.url = window.location.origin;[m
+[32m+[m[32m  data.image = `${window.location.origin}/logo.png`;[m
+[32m+[m
+[32m+[m[32m  schema.textContent = JSON.stringify(data);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m  let canonical = document.querySelector([m
+[32m+[m[32m    'link[rel="canonical"]'[m
+[32m+[m[32m  );[m
+[32m+[m
+[32m+[m[32m  if (canonical) {[m
+[32m+[m[32m    canonical.setAttribute([m
+[32m+[m[32m      "href",[m
+[32m+[m[32m      `https://${window.location.hostname}/`[m
+[32m+[m[32m    );[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32mconst ogUrl = document.querySelector([m
+[32m+[m[32m  'meta[property="og:url"]'[m
+[32m+[m[32m);[m
+[32m+[m
+[32m+[m[32mif (ogUrl) {[m
+[32m+[m[32m  ogUrl.setAttribute([m
+[32m+[m[32m    "content",[m
+[32m+[m[32m    window.location.origin + "/"[m
+[32m+[m[32m  );[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m}, [currentSales]);[m
+[32m+[m
+   return ([m
+     <div className="min-h-screen bg-black text-white font-sans">[m
+       {/* Navbar */}[m
+[31m-      <header className="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/10 shadow-2xl">[m
+[32m+[m[32m      <header className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-lg">[m
+   <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 h-[80px]">[m
+ [m
+    {/* Logo Hasjrat */}[m
+[31m-<div className="bg-white rounded-lg px-2 py-1">[m
+[32m+[m[32m<div className="flex items-center">[m
+   <img[m
+     src={hasjratLogo}[m
+     alt="Hasjrat Toyota"[m
+[31m-    className="h-8 md:h-14 object-contain"[m
+[32m+[m[32m    className="h-7 md:h-10 object-contain"[m
+   />[m
+ </div>[m
+ [m
+     {/* Menu */}[m
+     <button[m
+[31m-  className="lg:hidden text-white text-3xl"[m
+[32m+[m[32m  className="lg:hidden text-black text-4xl font-bold"[m
+   onClick={() => setMobileMenu(!mobileMenu)}[m
+ >[m
+   ☰[m
+ </button>[m
+[31m-      <nav className="hidden lg:flex gap-10 text-lg font-semibold">[m
+[31m-      <a href="#" className="text-white hover:text-red-500 transition">[m
+[31m-        Beranda[m
+[31m-      </a>[m
+[32m+[m[32m      <nav className="hidden lg:flex items-center gap-8 text-base font-semibold">[m
+[32m+[m[32m      <a[m
+[32m+[m[32m    href="#"[m
+[32m+[m[32m  onClick={(e) => {[m
+[32m+[m[32m    e.preventDefault();[m
+[32m+[m[32m    window.scrollTo({[m
+[32m+[m[32m      top: 0,[m
+[32m+[m[32m      behavior: "smooth",[m
+[32m+[m[32m    });[m
+[32m+[m[32m  }}[m
+[32m+[m[32m  className="text-black hover:text-red-500 transition"[m
+[32m+[m[32m>[m
+[32m+[m[32m  Beranda[m
+ [m
+[31m-      <a href="#unit" className="text-gray-300 hover:text-red-500 transition">[m
+[31m-        Unit Toyota[m
+[31m-      </a>[m
+[32m+[m[32m</a>[m
+[32m+[m[32m    <button[m
+[32m+[m[32m  onClick={() => {[m
+[32m+[m[32m    document[m
+[32m+[m[32m      .getElementById("unit")[m
+[32m+[m[32m      ?.scrollIntoView({[m
+[32m+[m[32m        behavior: "smooth",[m
+[32m+[m[32m        block: "start",[m
+[32m+[m[32m      });[m
+[32m+[m[32m  }}[m
+[32m+[m[32m  className="text-gray-800 hover:text-red-500 transition whitespace-nowrap"[m
+[32m+[m[32m>[m
+[32m+[m[32m  Unit Toyota[m
+[32m+[m[32m</button>[m
+ [m
+[31m-      <a href="#promo" className="text-gray-300 hover:text-red-500 transition">[m
+[31m-        Promo[m
+[31m-      </a>[m
+[32m+[m[32m<button[m
+[32m+[m[32m  onClick={() => {[m
+[32m+[m[32m    document[m
+[32m+[m[32m      .getElementById("promo")[m
+[32m+[m[32m      ?.scrollIntoView({[m
+[32m+[m[32m        behavior: "smooth",[m
+[32m+[m[32m        block: "start",[m
+[32m+[m[32m      });[m
+[32m+[m[32m  }}[m
+[32m+[m[32m  className="text-gray-800 hover:text-red-500 transition"[m
+[32m+[m[32m>[m
+[32m+[m[32m  Lihat Promo[m
+[32m+[m[32m</button>[m
+ [m
+[31m-      <a href="#layanan" className="text-gray-300 hover:text-red-500 transition">[m
+[32m+[m[32m      <a href="#layanan" className="text-gray-800 hover:text-red-500 transition">[m
+         Layanan[m
+       </a>[m
+ [m
+[36m@@ -267,35 +673,92 @@[m [mconst testimonials = [[m
+               });[m
+           }, 100);[m
+         }}[m
+[31m-        className="text-gray-300 hover:text-red-500 transition"[m
+[32m+[m[32m        className="text-gray-800 hover:text-red-500 transition"[m
+       >[m
+         Testimoni[m
+       </button>[m
+ [m
+[31m-      <a href="#kontak" className="text-gray-300 hover:text-red-500 transition">[m
+[32m+[m[32m      <a href="#kontak" className="text-gray-800 hover:text-red-500 transition">[m
+         Kontak[m
+       </a>[m
+     </nav>[m
+ [m
+ {mobileMenu && ([m
+   <div className="absolute top-full left-0 w-full bg-black/95 text-white lg:hidden z-[9999]">[m
+[31m-    <a href="#beranda" className="block px-6 py-3 border-b border-gray-700">[m
+[31m-      Beranda[m
+[31m-    </a>[m
+[32m+[m[32m    <button[m
+[32m+[m[32m  onClick={() => {[m
+[32m+[m[32m    window.scrollTo({[m
+[32m+[m[32m      top: 0,[m
+[32m+[m[32m      behavior: "smooth",[m
+[32m+[m[32m    });[m
+[32m+[m[32m    setMobileMenu(false);[m
+[32m+[m[32m  }}[m
+[32m+[m[32m  className="block w-full text-left px-6 py-3 border-b border-gray-700"[m
+[32m+[m[32m>[m
+[32m+[m[32m  Beranda[m
+[32m+[m[32m</button>[m
+[32m+[m
+[32m+[m[32m    <button[m
+[32m+[m[32m  onClick={() => {[m
+[32m+[m[32m    document.getElementById("unit")?.scrollIntoView({[m
+[32m+[m[32m      behavior: "smooth",[m
+[32m+[m[32m      block: "start",[m
+[32m+[m[32m    });[m
+ [m
+[31m-    <a href="#unit" className="block px-6 py-3 border-b border-gray-700">[m
+[31m-      Unit Toyota[m
+[31m-    </a>[m
+[32m+[m[32m    setMobileMenu(false);[m
+[32m+[m[32m  }}[m
+[32m+[m[32m  className="block w-full text-left px-6 py-3 border-b border-gray-700"[m
+[32m+[m[32m>[m
+[32m+[m[32m  Unit Toyota[m
+[32m+[m[32m</button>[m
+ [m
+[31m-    <a href="#promo" className="block px-6 py-3 border-b border-gray-700">[m
+[31m-      Promo[m
+[31m-    </a>[m
+[32m+[m[32m   <button[m
+[32m+[m[32m  onClick={() => {[m
+[32m+[m[32m    document.getElementById("promo")?.scrollIntoView({[m
+[32m+[m[32m      behavior: "smooth",[m
+[32m+[m[32m      block: "start",[m
+[32m+[m[32m    });[m
+ [m
+[31m-    <a href="#layanan" className="block px-6 py-3 border-b border-gray-700">[m
+[31m-      Layanan[m
+[31m-    </a>[m
+[32m+[m[32m    setMobileMenu(false);[m
+[32m+[m[32m  }}[m
+[32m+[m[32m  className="block w-full text-left px-6 py-3 border-b border-gray-700"[m
+[32m+[m[32m>[m
+[32m+[m[32m  Promo[m
+[32m+[m[32m</button>[m
+ [m
+     <button[m
+[32m+[m[32m  onClick={() => {[m
+[32m+[m[32m    document.getElementById("layanan")?.scrollIntoView({[m
+[32m+[m[32m      behavior: "smooth",[m
+[32m+[m[32m      block: "start",[m
+[32m+[m[32m    });[m
+[32m+[m
+[32m+[m[32m    setMobileMenu(false);[m
+[32m+[m[32m  }}[m
+[32m+[m[32m  className="block w-full text-left px-6 py-3 border-b border-gray-700"[m
+[32m+[m[32m>[m
+[32m+[m[32m  Layanan[m
+[32m+[m[32m</button>[m
+[32m+[m
+[32m+[m[32m<button[m
+[32m+[m[32m  onClick={() => {[m
+[32m+[m[32m    setMobileMenu(false);[m
+[32m+[m
+[32m+[m[32m    setTimeout(() => {[m
+[32m+[m[32m      document[m
+[32m+[m[32m        .getElementById("kontak")[m
+[32m+[m[32m        ?.scrollIntoView({[m
+[32m+[m[32m          behavior: "smooth",[m
+[32m+[m[32m          block: "start",[m
+[32m+[m[32m        });[m
+[32m+[m[32m    }, 100);[m
+[32m+[m[32m  }}[m
+[32m+[m[32m  className="block w-full text-left px-6 py-3"[m
+[32m+[m[32m>[m
+[32m+[m[32m  Kontak[m
+[32m+[m[32m</button>[m
+[32m+[m
+[32m+[m[32m   <button[m
+   onClick={() => {[m
+     setShowTestimonials(true);[m
+ [m
+[36m@@ -312,9 +775,6 @@[m [mconst testimonials = [[m
+   Testimoni[m
+ </button>[m
+ [m
+[31m-    <a href="#kontak" className="block px-6 py-3">[m
+[31m-      Kontak[m
+[31m-    </a>[m
+   </div>[m
+ )}[m
+ [m
+[36m@@ -322,9 +782,9 @@[m [mconst testimonials = [[m
+ </header>[m
+ [m
+       {/* Hero */}[m
+[31m-      <section className="relative min-h-[85vh] pt-24 md:pt-32">[m
+[32m+[m[32m      <section className="relative min-h-[85vh] pt-24 md:pt-32 overflow-hidden">[m
+         <div className="absolute inset-0 bg-[radial-gradient(circle_at_right,_rgba(220,38,38,0.35),transparent_40%),linear-gradient(to_right,_#000000,_#120000,_#000000)]"></div>[m
+[31m-<div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 md:gap-20 items-center max-w-7xl mx-auto relative z-10 px-5 md:px-10">[m
+[32m+[m[32m<div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 md:gap-20 items-center max-w-7xl mx-auto relative z-10 px-5 md:px-10">[m
+   <div>[m
+     <div className="max-w-[620px]"></div>[m
+     [m
+[36m@@ -348,7 +808,7 @@[m [mconst testimonials = [[m
+   cepat dari Sales Executive Toyota.[m
+ </p>[m
+ [m
+[31m-<div className="flex flex-col gap-4 md:grid md:grid-cols-2 max-w-lg">[m
+[32m+[m[32m<div className="flex flex-col gap-4 pb-6 md:grid md:grid-cols-2 max-w-lg">[m
+ [m
+   <div className="flex items-center gap-3 text-lg">[m
+     <span>✅</span>[m
+[36m@@ -428,36 +888,65 @@[m [mconst testimonials = [[m
+   </div>[m
+ </div>[m
+             <div className="mt-10 flex flex-col md:flex-row gap-4">[m
+[31m-              <button[m
+[31m-  onClick={() =>[m
+[32m+[m[32m<button[m
+[32m+[m
+[32m+[m[32m  onClick={() => {[m
+[32m+[m[32m    if (typeof gtag !== "undefined") {[m
+[32m+[m[32m      gtag("event", "whatsapp_click", {[m
+[32m+[m[32m        event_category: "Lead",[m
+[32m+[m[32m        event_label: currentSales.nama,[m
+[32m+[m[32m        sales_name: currentSales.nama,[m
+[32m+[m[32m        sales_phone: currentSales.wa,[m
+[32m+[m[32m        website: window.location.hostname[m
+[32m+[m[32m      });[m
+[32m+[m[32m    }[m
+[32m+[m
+     window.open([m
+[31m-      `https://wa.me/6282340002917?text=${encodeURIComponent([m
+[31m-        "Halo Pak Hayatul, saya melihat website Toyota Gorontalo dan ingin mendapatkan informasi promo, stok unit, serta simulasi kredit terbaru."[m
+[31m-      )}`,[m
+[32m+[m[32m      `https://wa.me/${currentSales.wa}?text=${encodeURIComponent(`[m
+[32m+[m[32mHalo Kak ${currentSales.nama},[m
+[32m+[m
+[32m+[m[32mSaya menghubungi dari website ${window.location.hostname}[m
+[32m+[m
+[32m+[m[32mSaya tertarik dengan:[m
+[32m+[m[32m• Promo Toyota terbaru[m
+[32m+[m[32m• Stok unit tersedia[m
+[32m+[m[32m• Simulasi kredit[m
+[32m+[m
+[32m+[m[32mMohon informasi lebih lanjut. Terima kasih.[m
+[32m+[m[32m`)}`,[m
+       "_blank"[m
+[31m-    )[m
+[31m-  }[m
+[31m-  className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 px-8 py-4 rounded-2xl font-bold"[m
+[32m+[m[32m    );[m
+[32m+[m[32m  }}[m
+[32m+[m
+[32m+[m[32m  className="bg-gradient-to-r from-black to-gray-900 text-white px-12 py-5 rounded-2xl ..."[m
+ >[m
+   Chat WhatsApp[m
+ </button>[m
+ [m
+[31m-          <a[m
+[31m-            href="#unit"[m
+[31m-            className="border border-white/20 px-8 py-4 rounded-2xl font-bold hover:border-red-500 inline-block"[m
+[32m+[m[32m         <a[m
+[32m+[m[32m  href="#promo"[m
+[32m+[m[32m  className="[m
+[32m+[m[32m    flex[m
+[32m+[m[32m    items-center[m
+[32m+[m[32m    justify-center[m
+[32m+[m[32m    border border-gray-600[m
+[32m+[m[32m    px-6 py-3[m
+[32m+[m[32m    rounded-xl[m
+[32m+[m[32m    text-center[m
+[32m+[m[32m  "[m
+ >[m
+[31m-            Lihat Promo[m
+[31m-          </a>[m
+[32m+[m[32m  Lihat Promo[m
+[32m+[m[32m</a>[m
+             </div>[m
+           </div>         [m
+             [m
+[31m-            <div className="hidden lg:flex items-center justify-end relative">[m
+[32m+[m[32m            <div className="block lg:flex items-center justify-end relative">[m
+             <div className="absolute w-[500px] h-[500px] bg-red-600/20 blur-[120px] rounded-full"></div>[m
+             <div className="relative flex justify-center items-center"></div>[m
+             <img[m
+[31m-            src={heroSlides[currentSlide]}[m
+[31m-            alt="Promo Toyota"[m
+[31m-            className="w-full max-w-[520px] object-contain hover:scale-105 transition duration-500 drop-shadow-[0_0_60px_rgba(220,38,38,0.45)]"[m
+[32m+[m[32m              src={heroSlides[currentSlide]}[m
+[32m+[m[32m              alt="Promo Toyota"[m
+[32m+[m[32m              className="w-full max-w-[320px] md:max-w-[520px] mx-auto object-contain hover:scale-105 transition duration-500"[m
+             />[m
+           </div>[m
+         </div>[m
+[36m@@ -507,13 +996,15 @@[m [mconst testimonials = [[m
+ [m
+ </div>[m
+ [m
+[31m-      {/* Product */}[m
+[31m-      <div id="promo"></div>[m
+[31m-      <section className="px-6 md:px-16 py-3 bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white">[m
+[31m-  <div className="max-w-6xl mx-auto text-center">[m
+[32m+[m[32m      {/* Product */}[m[41m      [m
+[32m+[m[32m  <section[m
+[32m+[m[32m    id="promo"[m
+[32m+[m[32m    className="scroll-mt-24 px-6 md:px-16 py-3 bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white"[m
+[32m+[m[32m  >[m
+[32m+[m[32m    <div className="max-w-6xl mx-auto text-center">[m
+ [m
+     <h2 className="text-3xl md:text-5xl font-black mb-6">[m
+[31m-      🔥 PROMO TOYOTA[m
+[32m+[m[32m      PROMO TOYOTA[m
+       GORONTALO {monthYear.toUpperCase()}[m
+     </h2>[m
+ [m
+[36m@@ -537,13 +1028,37 @@[m [mconst testimonials = [[m
+     </div>[m
+ [m
+    <button[m
+[31m-  onClick={() =>[m
+[32m+[m
+[32m+[m[32m  onClick={() => {[m
+[32m+[m[32m  if (typeof gtag !== "undefined") {[m
+[32m+[m[32m    gtag("event", "whatsapp_click", {[m
+[32m+[m[32m      event_category: "Lead",[m
+[32m+[m[32m      event_label: currentSales.nama,[m
+[32m+[m[32m      sales_name: currentSales.nama,[m
+[32m+[m[32m      sales_phone: currentSales.wa,[m
+[32m+[m[32m      website: window.location.hostname[m
+[32m+[m[32m    });[m
+[32m+[m[32m  }[m
+     window.open([m
+[31m-      "https://wa.me/6282340002917",[m
+[32m+[m[32m      `https://wa.me/${currentSales.wa}?text=${encodeURIComponent(`[m
+[32m+[m[32mHalo Kak ${currentSales.nama},[m
+[32m+[m
+[32m+[m[32mSaya menghubungi dari website:[m
+[32m+[m[32m${window.location.hostname}[m
+[32m+[m
+[32m+[m[32mSaya tertarik dengan:[m
+[32m+[m[32m• Promo Toyota terbaru[m
+[32m+[m[32m• Simulasi Kredit[m
+[32m+[m[32m• Stok Unit Toyota[m
+[32m+[m
+[32m+[m[32mMohon informasi lebih lanjut.[m
+[32m+[m
+[32m+[m[32mTerima kasih.[m
+[32m+[m[32m`)}`,[m
+       "_blank"[m
+[31m-    )[m
+[31m-  }[m
+[31m-  className="bg-gradient-to-r from-black to-gray-900 text-white px-12 py-5 rounded-2xl font-black shadow-[0_15px_35px_rgba(0,0,0,0.35)] hover:shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:scale-105 transition-all duration-300"[m
+[32m+[m[32m    );[m
+[32m+[m[32m  }}[m
+[32m+[m[32m  className="bg-gradient-to-r from-black to-gray-900 text-white px-12 py-5 rounded-2xl font-bold shadow-2xl hover:scale-105 transition-all"[m
+ >[m
+   <span className="flex items-center justify-center gap-2">[m
+     <FaWhatsapp className="text-green-400 text-xl" />[m
+[36m@@ -551,15 +1066,9 @@[m [mconst testimonials = [[m
+   </span>[m
+ </button>[m
+ [m
+[31m-    <div className="mt-6 flex justify-center gap-8 text-white">[m
+[31m-  <div>⭐ 4.9/5 Rating</div>[m
+[31m-  <div>🚗 90.000+ Unit Terjual</div>[m
+[31m-  <div>⚡ Respon WhatsApp Cepat</div>[m
+[31m-</div>[m
+[31m-[m
+   </div>[m
+ </section>[m
+[31m-            <section id="unit" className="px-6 md:px-16 py-14 bg-white">[m
+[32m+[m[32m          <section id="unit" className="scroll-mt-24 px-6 md:px-16 py-14 bg-white">[m
+         <div className="text-center mb-14">[m
+           <h2 className="text-5xl font-black text-black mb-4">[m
+             Toyota Pilihan Terbaik[m
+[36m@@ -584,18 +1093,28 @@[m [mconst testimonials = [[m
+   className="w-full h-40 md:h-64 object-contain hover:scale-105 transition-all duration-500"[m
+  />[m
+ [m
+[31m-  {["Agya","Calya","Hilux Rangga"].includes(car.name) && ([m
+[32m+[m[32m  {["All New Agya",[m
+[32m+[m[32m  "All New Calya",[m
+[32m+[m[32m  "Hilux Rangga",[m
+[32m+[m[32m  "Yaris Cross Hev",[m
+[32m+[m[32m  "Hilux Double Cabin"].includes(car.name) && ([m
+   <div className="absolute bottom-2 left-2 md:top-3 md:left-3 md:bottom-auto bg-gradient-to-r from-red-700 to-red-500 text-white px-2 py-1 md:px-3 rounded-full text-[10px] md:text-[11px] font-semibold shadow-lg">[m
+     Promo {monthYear}[m
+   </div>[m
+ )}[m
+ [m
+[31m-{["Avanza","Veloz HV","Raize","Rush","Zenix HV"].includes(car.name) && ([m
+[32m+[m[32m{["All New Avanza","Veloz HEV","All new Raize","All New Rush","Zenix HEV"].includes(car.name) && ([m
+   <div className="absolute bottom-2 left-2 md:top-3 md:left-3 md:bottom-auto bg-gradient-to-r from-emerald-700 to-emerald-500 text-white px-2 py-1 md:px-3 rounded-full text-[10px] md:text-[11px] font-semibold shadow-lg">[m
+     Program Proteksi[m
+   </div>[m
+ )}[m
+ [m
+[32m+[m[32m{["Fortuner 2.8","Innova Reborn"].includes(car.name) && ([m
+[32m+[m[32m  <div className="absolute bottom-2 left-2 md:top-3 md:left-3 md:bottom-auto bg-green-600 text-white px-2 py-1 md:px-3 rounded-full text-[10px] md:text-[11px] font-semibold shadow-lg">[m
+[32m+[m[32m    Cashback 3 Bulan[m
+[32m+[m[32m  </div>[m
+[32m+[m[32m)}[m
+[32m+[m
+ </div>[m
+ [m
+ <h3 className="text-3xl font-black text-black mb-2">[m
+[36m@@ -620,8 +1139,8 @@[m [mconst testimonials = [[m
+ [m
+   <button[m
+   onClick={() => {[m
+[31m-    setSelectedTenor(60);[m
+[31m-    setSelectedCar(car);[m
+[32m+[m[32m  setSelectedSimulasi(null);[m
+[32m+[m[32m  setSelectedCar(car);[m
+   }}[m
+   className="bg-black text-white flex-1 py-4 rounded-2xl font-bold hover:bg-gray-800 transition"[m
+ >[m
+[36m@@ -630,7 +1149,7 @@[m [mconst testimonials = [[m
+ [m
+ <button[m
+   onClick={() => {[m
+[31m-    setSelectedTenor(60);[m
+[32m+[m[32m    setSelectedCar(null);[m
+     setSelectedSimulasi(car);[m
+   }}[m
+   className="flex-1 bg-red-600 hover:bg-red-700 text-white text-center py-3 rounded-xl font-bold"[m
+[36m@@ -679,19 +1198,17 @@[m [mconst testimonials = [[m
+       />[m
+ [m
+       <select[m
+[31m-        value={leadUnit}[m
+[31m-        onChange={(e) => setLeadUnit(e.target.value)}[m
+[31m-        className="w-full p-4 rounded-xl bg-black/40 border border-white/10"[m
+[31m-      >[m
+[31m-        <option value="">Pilih Unit Toyota</option>[m
+[31m-        <option>Agya</option>[m
+[31m-        <option>Calya</option>[m
+[31m-        <option>Avanza</option>[m
+[31m-        <option>Veloz HV</option>[m
+[31m-        <option>Raize</option>[m
+[31m-        <option>Rush</option>[m
+[31m-        <option>Zenix HV</option>[m
+[31m-        <option>Hilux Rangga</option>[m
+[32m+[m[32m  value={leadUnit}[m
+[32m+[m[32m  onChange={(e) => setLeadUnit(e.target.value)}[m
+[32m+[m[32m  className="w-full p-4 rounded-xl bg-black/40 border border-white/10"[m
+[32m+[m[32m>[m
+[32m+[m[32m  <option value="">Pilih Unit Toyota</option>[m
+[32m+[m
+[32m+[m[32m  {cars.map((car) => ([m
+[32m+[m[32m    <option key={car.name} value={car.name}>[m
+[32m+[m[32m      {car.name}[m
+[32m+[m[32m    </option>[m
+[32m+[m[32m  ))}[m
+       </select>[m
+ <div className="grid md:grid-cols-3 gap-4 text-center">[m
+   <div className="bg-green-500/10 p-4 rounded-xl">[m
+[36m@@ -724,7 +1241,7 @@[m [mconst testimonials = [[m
+       return;[m
+     }[m
+ [m
+[31m-    const message = `Halo Pak Hayatul,[m
+[32m+[m[32m    const message = `Halo Kak ${currentSales.nama},[m
+ [m
+ Nama : ${leadName}[m
+ No HP : ${leadPhone}[m
+[36m@@ -732,10 +1249,23 @@[m [mUnit : ${leadUnit}[m
+ [m
+ Saya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+ [m
+[31m-          window.open([m
+[31m-            `https://wa.me/6282340002917?text=${encodeURIComponent(message)}`,[m
+[31m-            "_blank"[m
+[31m-          );[m
+[32m+[m[32mif (typeof gtag !== "undefined") {[m
+[32m+[m[32m  gtag("event", "lead_submit", {[m
+[32m+[m[32m    event_category: "Lead",[m
+[32m+[m[32m    event_label: leadUnit,[m
+[32m+[m[32m    sales_name: currentSales.nama,[m
+[32m+[m[32m    sales_phone: currentSales.wa,[m
+[32m+[m[32m    customer_name: leadName,[m
+[32m+[m[32m    website: window.location.hostname[m
+[32m+[m[32m  });[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32msetTimeout(() => {[m
+[32m+[m[32m  window.open([m
+[32m+[m[32m    `https://wa.me/${currentSales.wa}?text=${encodeURIComponent(message)}`,[m
+[32m+[m[32m    "_blank"[m
+[32m+[m[32m  );[m
+[32m+[m[32m}, 1000);[m
+         }}[m
+         className="w-full bg-red-600 hover:bg-red-700 py-4 rounded-xl font-bold text-white"[m
+       >[m
+[36m@@ -801,15 +1331,15 @@[m [mSaya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+ [m
+     <div className="bg-white/5 border border-white/10 rounded-3xl p-6">[m
+ [m
+[31m-      <iframe[m
+[31m-        src="https://maps.google.com/maps?q=Hasjrat%20Toyota%20Gorontalo&t=&z=15&ie=UTF8&iwloc=&output=embed"[m
+[31m-        width="100%"[m
+[31m-        height="450"[m
+[31m-        style={{ border: 0 }}[m
+[31m-        allowFullScreen=""[m
+[31m-        loading="lazy"[m
+[31m-        className="rounded-2xl"[m
+[31m-      ></iframe>[m
+[32m+[m[32m     <iframe[m
+[32m+[m[32m      src="https://maps.google.com/maps?q=Jl.%20Ahmad%20A.%20Wahab,%20Pentadio%20Barat,%20Telaga%20Biru,%20Kabupaten%20Gorontalo,%20Gorontalo&t=&z=17&ie=UTF8&iwloc=&output=embed"[m
+[32m+[m[32m      width="100%"[m
+[32m+[m[32m      height="450"[m
+[32m+[m[32m      style={{ border: 0 }}[m
+[32m+[m[32m      allowFullScreen=""[m
+[32m+[m[32m      loading="lazy"[m
+[32m+[m[32m      className="rounded-2xl"[m
+[32m+[m[32m    ></iframe>[m
+ [m
+       <div className="mt-6 text-center">[m
+ [m
+[36m@@ -826,7 +1356,7 @@[m [mSaya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+ </p>[m
+ [m
+ <p className="text-gray-300 mb-6">[m
+[31m-  ☎️ Sales Hotline : 082340002917[m
+[32m+[m[32m  ☎️ Sales Hotline : {currentSales.wa}[m
+ </p>[m
+ [m
+         <a[m
+[36m@@ -848,7 +1378,7 @@[m [mSaya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+ [m
+   <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-6">[m
+ [m
+[31m-    <div className="bg-white rounded-[40px] max-w-lg w-full p-8 relative text-black shadow-[0_25px_80px_rgba(0,0,0,0.4)]">[m
+[32m+[m[32m    <div className="bg-white rounded-[30px] w-full max-w-[95vw] md:max-w-lg max-h-[90vh] overflow-y-auto p-4 md:p-8 relative text-black shadow-[0_25px_80px_rgba(0,0,0,0.4)]">[m
+ [m
+       <button[m
+   onClick={() => setSelectedSimulasi(null)}[m
+[36m@@ -863,7 +1393,7 @@[m [mSaya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+         className="w-full h-56 object-contain mb-4"[m
+       />[m
+ [m
+[31m-      <h2 className="text-3xl font-black text-center mb-2">[m
+[32m+[m[32m      <h2 className="text-xl md:text-3xl font-black text-center mb-2">[m
+         {selectedSimulasi.name}[m
+       </h2>[m
+ [m
+[36m@@ -896,7 +1426,7 @@[m [mSaya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+     Pilih Tenor[m
+   </p>[m
+ [m
+[31m-  <div className="grid grid-cols-5 gap-2">[m
+[32m+[m[32m  <div className="grid grid-cols-3 md:grid-cols-5 gap-2">[m
+   <button[m
+   onClick={() => setSelectedTenor(12)}[m
+   className={`p-2 rounded-xl text-sm font-bold ${[m
+[36m@@ -971,12 +1501,18 @@[m [mSaya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+       </div>[m
+ [m
+       <button[m
+[31m-        onClick={() =>[m
+[32m+[m[32m       onClick={() => {[m
+[32m+[m
+[32m+[m[32m        if (typeof gtag !== "undefined") {[m
+[32m+[m[32m        gtag("event", "simulasi_click");[m
+[32m+[m[32m       }[m
+[32m+[m
+           window.open([m
+[31m-            `https://wa.me/6282340002917?text=Halo Pak Hayatul, saya ingin simulasi kredit Toyota ${selectedSimulasi.name}`,[m
+[32m+[m[32m            `https://wa.me/${currentSales.wa}?text=Halo Kak ${currentSales.nama}, saya ingin simulasi kredit Toyota ${selectedSimulasi.name}`,[m
+             "_blank"[m
+           )[m
+[31m-        }[m
+[32m+[m[32m        }}[m
+[32m+[m[41m        [m
+         className="w-full bg-green-500 text-white py-4 rounded-2xl font-bold hover:bg-green-600"[m
+       >[m
+         📲 Minta Simulasi Lengkap[m
+[36m@@ -986,12 +1522,64 @@[m [mSaya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+ [m
+   </div>[m
+ )}[m
+[32m+[m
+[32m+[m[32m{selectedCar && ([m
+[32m+[m
+[32m+[m[32m  <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-6">[m
+[32m+[m
+[32m+[m[32m    <div className="bg-white rounded-[40px] max-w-lg w-full p-8 relative text-black shadow-[0_25px_80px_rgba(0,0,0,0.4)]">[m
+[32m+[m
+[32m+[m[32m      <button[m
+[32m+[m[32m        onClick={() => setSelectedCar(null)}[m
+[32m+[m[32m        className="absolute top-4 right-4 z-50 w-12 h-12 rounded-full bg-red-600 text-white shadow-lg flex items-center justify-center text-2xl font-bold"[m
+[32m+[m[32m      >[m
+[32m+[m[32m        ×[m
+[32m+[m[32m      </button>[m
+[32m+[m
+[32m+[m[32m      <img[m
+[32m+[m[32m         src={selectedCar.image}[m
+[32m+[m[32m         alt={selectedCar.name}[m
+[32m+[m[32m        className="w-full h-56 object-contain mb-4"[m
+[32m+[m[32m      />[m
+[32m+[m
+[32m+[m[32m      <h2 className="text-xl md:text-3xl font-black text-center mb-2">[m
+[32m+[m[32m        {selectedCar.name}[m
+[32m+[m[32m      </h2>[m
+[32m+[m[41m      [m
+[32m+[m[32m      <p className="text-center text-red-600 font-bold">[m
+[32m+[m[32m      {selectedCar.name}[m
+[32m+[m[32m      </p>[m
+[32m+[m[41m      [m
+[32m+[m[32m      <p className="text-center text-gray-500 mb-6">[m
+[32m+[m[32m        Detail Toyota[m
+[32m+[m[32m      </p>[m
+[32m+[m
+[32m+[m[32m      <button[m
+[32m+[m[32m        onClick={() => {[m
+[32m+[m
+[32m+[m[32m       if (typeof gtag !== "undefined") {[m
+[32m+[m[32m       gtag("event", "penawaran_click");[m
+[32m+[m[32m      }[m
+[32m+[m
+[32m+[m[32m      window.open([m
+[32m+[m[32m      `https://wa.me/${currentSales.wa}?text=Halo Kak ${currentSales.nama}, saya ingin informasi lengkap Toyota ${selectedCar.name}`,[m
+[32m+[m[32m      "_blank"[m
+[32m+[m[32m      );[m
+[32m+[m[32m      }}[m
+[32m+[m[32m        className="w-full mt-5 bg-green-500 text-white py-4 rounded-2xl font-bold hover:bg-green-600"[m
+[32m+[m[32m      >[m
+[32m+[m[32m        📲 Minta Penawaran[m
+[32m+[m[32m      </button>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  )}[m
+[32m+[m
+       {showTestimonials && ([m
+[31m-      <section id="testimoni" className="py-24 px-6 md:px-16 bg-gradient-to-b from-black to-[#120000]">[m
+[32m+[m[32m      <section id="testimoni" className="mt-10 pt-24 pb-24 px-6 md:px-16 bg-gradient-to-b from-black to-[#120000]">[m
+         <div className="max-w-screen-2xl mx-auto">[m
+           <div className="text-center mb-16">[m
+             <h2 className="text-5xl font-black mb-4">[m
+[31m-              Testimoni Customer[m
+[32m+[m[32m              Dokumentasi Serah Terima Unit[m
+             </h2>[m
+ [m
+             <p className="text-gray-400 text-lg">[m
+[36m@@ -1010,7 +1598,7 @@[m [mSaya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+                     src={item.image}[m
+                     alt="Testimoni Customer"[m
+                     onClick={() => setSelectedTesti(item.image)}[m
+[31m-                    className="w-full h-72 rounded-3xl object-cover cursor-pointer hover:scale-105 transition duration-300"[m
+[32m+[m[32m                    className="w-full aspect-[4/3] object-cover rounded-3xl object-cover cursor-pointer hover:scale-105 transition duration-300"[m
+                   />[m
+                 </div>[m
+ [m
+[36m@@ -1057,101 +1645,127 @@[m [mSaya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+ [m
+ <div[m
+   className="hidden md:block fixed bottom-4 right-4 md:bottom-10 md:right-6 z-50 cursor-pointer hover:scale-105 transition-all duration-300"[m
+[31m-  onClick={() =>[m
+[31m-    window.open([m
+[31m-      `https://wa.me/6282340002917?text=${encodeURIComponent([m
+[31m-        "Halo Pak Hayatul, saya melihat website Toyota Gorontalo dan ingin mendapatkan informasi promo, stok unit serta simulasi kredit terbaru."[m
+[31m-      )}`,[m
+[31m-      "_blank"[m
+[31m-    )[m
+[32m+[m[32m  onClick={() => {[m
+[32m+[m
+[32m+[m[32m  if (typeof gtag !== "undefined") {[m
+[32m+[m[32m    gtag("event", "whatsapp_floating");[m
+   }[m
+[32m+[m
+[32m+[m[32m  window.open([m
+[32m+[m[32m    `https://wa.me/${currentSales.wa}?text=${encodeURIComponent([m
+[32m+[m[32m      `Halo Kak ${currentSales.nama},[m
+[32m+[m
+[32m+[m[32mSaya melihat website ${window.location.hostname}[m
+[32m+[m
+[32m+[m[32mSaya ingin mendapatkan informasi:[m
+[32m+[m[32m• Promo Toyota terbaru[m
+[32m+[m[32m• Stok unit tersedia[m
+[32m+[m[32m• Simulasi kredit[m
+[32m+[m
+[32m+[m[32mMohon bantuannya. Terima kasih.`[m
+[32m+[m[32m    )}`,[m
+[32m+[m[32m    "_blank"[m
+[32m+[m[32m  )[m
+[32m+[m[32m}}[m
+ >[m
+   <div className="bg-black/80 backdrop-blur-lg border border-red-500/30 rounded-xl p-3 shadow-2xl w-32 md:w-40">[m
+     <div className="flex flex-col items-center text-center">[m
+ [m
+       <img[m
+[31m-        src={salesPhoto}[m
+[31m-        alt="Hayatul Kirom"[m
+[32m+[m[32m        src={currentSales.photo}[m
+[32m+[m[32m        alt={currentSales.nama}[m
+         className="w-20 h-28 object-cover rounded-lg border border-red-500"[m
+       />[m
+[31m-      <h4 className="font-bold text-white">[m
+[31m-        Hayatul Kirom[m
+[32m+[m[32m      <h4 className="font-medium text-white text-[11px] mt-2 text-center leading-tight">[m
+[32m+[m[32m      {currentSales.nama}[m
+       </h4>[m
+       <p className="text-gray-400 text-sm">[m
+[31m-        Sales Executive Toyota[m
+[32m+[m[32m        {currentSales.jabatan}[m
+       </p>[m
+[31m-      <div className="mt-2 bg-green-500 text-white text-xs px-3 py-1 rounded-full font-bold">[m
+[31m-        WhatsApp[m
+[31m-      </div>[m
+[31m-      [m
+[31m-       <span className="text-green-400 text-xs font-semibold">[m
+[31m-    Online Sekarang[m
+[32m+[m
+[32m+[m[32m      <div className="flex items-center justify-center gap-2">[m
+[32m+[m[32m  <span className="relative flex h-3 w-3">[m
+[32m+[m[32m    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>[m
+[32m+[m[32m    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>[m
+[32m+[m[32m  </span>[m
+[32m+[m
+[32m+[m[32m  <span className="text-green-400 text-xs font-semibold">[m
+[32m+[m[32m    Online[m
+   </span>[m
+[32m+[m
+[32m+[m[32m</div>[m
+ </div>[m
+   </div>[m
+ </div>[m
+ [m
+[31m-<footer className="py-8 text-center text-gray-500 border-t border-white/10 bg-black">[m
+[31m-  © 2026 Hayatul Kirom - Sales Executive Toyota Gorontalo[m
+[31m-</footer>[m
+[31m-[m
+[31m-{/* Floating WhatsApp Mobile */}[m
+[31m-<div className="md:hidden fixed bottom-4 left-4 right-4 z-[9999]">[m
+[31m-  <a[m
+[31m-    href="https://wa.me/6282340002917?text=Halo Pak Hayatul, saya ingin mendapatkan promo Toyota terbaru."[m
+[31m-    target="_blank"[m
+[31m-    rel="noopener noreferrer"[m
+[31m-    className="bg-white rounded-2xl shadow-2xl flex items-center gap-3 p-3 border border-green-100"[m
+[31m-  >[m
+[31m-    <img[m
+[31m-      src={salesPhoto}[m
+[31m-      alt="Hayatul Kirom"[m
+[31m-      className="w-14 h-14 rounded-full object-cover border-2 border-green-500"[m
+[31m-    />[m
+[32m+[m[32m{/* Floating Sales Mobile */}[m
+[32m+[m[32m<div[m
+[32m+[m[32m  className="md:hidden fixed bottom-4 right-3 z-50 cursor-pointer"[m
+[32m+[m[32m  onClick={() => {[m
+ [m
+[31m-    <div className="flex-1">[m
+[31m-      <div className="font-bold text-black text-sm">[m
+[31m-        Hayatul Kirom[m
+[31m-      </div>[m
+[32m+[m[32m  if (typeof gtag !== "undefined") {[m
+[32m+[m[32m    gtag("event", "whatsapp_mobile");[m
+[32m+[m[32m  }[m
+ [m
+[31m-      <div className="text-xs text-gray-500">[m
+[31m-        Sales Executive Toyota[m
+[31m-      </div>[m
+[32m+[m[32m  window.open([m
+[32m+[m[32m    `https://wa.me/${currentSales.wa}`,[m
+[32m+[m[32m    "_blank"[m
+[32m+[m[32m  );[m
+ [m
+[31m-      <div className="flex items-center gap-2 mt-1">[m
+[31m-  <span className="w-3 h-3 rounded-full bg-green-400 shadow-[0_0_12px_#4ade80,0_0_24px_#4ade80] animate-pulse"></span>[m
+[32m+[m[32m}}[m
+[32m+[m[32m>[m
+[32m+[m[32m  <div className="bg-black/90 border border-red-500/20 rounded-xl p-2 shadow-xl w-24">[m
+ [m
+[31m-  <span className="text-xs text-green-600 font-semibold">[m
+[31m-    Online Sekarang[m
+[31m-  </span>[m
+[31m-  </div>[m
+[32m+[m[32m    <div className="flex justify-center">[m
+[32m+[m[32m      <img[m
+[32m+[m[32m        src={currentSales.photo}[m
+[32m+[m[32m        alt={currentSales.nama}[m
+[32m+[m[32m        className="w-14 h-16 object-cover rounded-lg border border-red-500"[m
+[32m+[m[32m      />[m
+     </div>[m
+ [m
+[31m-    <div className="bg-green-500 text-white px-4 py-2 rounded-xl font-bold text-sm">[m
+[31m-      Chat[m
+[32m+[m[32m    <h4 className="font text-white text-xs mt-2 text-center leading-tight">[m
+[32m+[m[32m      {currentSales.nama}[m
+[32m+[m[32m    </h4>[m
+[32m+[m
+[32m+[m[32m    <div className="flex items-center justify-center gap-1 mt-1">[m
+[32m+[m[32m      <span className="relative flex h-2 w-2">[m
+[32m+[m[32m        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>[m
+[32m+[m[32m        <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>[m
+[32m+[m[32m      </span>[m
+[32m+[m
+[32m+[m[32m      <span className="text-green-400 text-xs font-semibold">[m
+[32m+[m[32m        Online[m
+[32m+[m[32m      </span>[m
+     </div>[m
+[31m-  </a>[m
+[32m+[m
+[32m+[m[32m  </div>[m
+ </div>[m
+ [m
+[32m+[m[32m<footer className="py-8 text-center text-gray-500 border-t border-white/10 bg-black">[m
+[32m+[m[32m  © 2026 {currentSales.nama} - {currentSales.jabatan} Gorontalo[m
+[32m+[m[32m</footer>[m
+[32m+[m
+[32m+[m
+       {selectedCar && ([m
+   <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[9999] p-4">[m
+ [m
+[31m-    <div className="bg-white rounded-3xl max-w-md w-full max-h-[90vh] overflow-y-auto pt-14 pb-6 px-6 relative">[m
+[32m+[m[32m    <div className="bg-white rounded-3xl max-w-sm w-full max-h-[90vh] overflow-y-auto pt-10 pb-4 px-4 relative">[m
+ [m
+    <button[m
+     onClick={() => setSelectedCar(null)}[m
+[31m-    className="sticky top-2 ml-auto z-[9999] w-10 h-10 bg-red-600 text-white rounded-full shadow-lg flex items-center justify-center text-2xl font-bold"[m
+[32m+[m[32m    className="absolute top-4 right-4 z-[9999] w-10 h-10 bg-red-600 text-white rounded-full shadow-lg flex items-center justify-center text-2xl font-bold"[m
+     >[m
+[31m-      ×[m
+[32m+[m[32m      ✕[m
+   </button>[m
+ [m
+       <img[m
+         src={selectedCar.image}[m
+         alt={selectedCar.name}[m
+[31m-         className="w-full h-36 object-contain mb-3"[m
+[32m+[m[32m         className="w-full h-56 object-contain mb-4"[m
+       />[m
+ [m
+[31m-      <h2 className="text-2xl font-black mb-2 text-black">[m
+[32m+[m[32m      <h2 className="text-xl font-bold mb-1 text-black">[m
+         {selectedCar.name}[m
+       </h2>[m
+ [m
+[36m@@ -1159,111 +1773,49 @@[m [mSaya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+         {selectedCar.desc}[m
+       </p>[m
+ [m
+[31m-      <div className="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-bold mb-4">[m
+[31m-      🟢 Ready Stock[m
+[31m-      </div>[m
+[32m+[m[32m     <div className="inline-block bg-green-100 text-green-700 px-3 py-1.5 rounded-full text-xs font-bold mb-3">[m
+[32m+[m[32m    🟢 Ready Stock[m
+[32m+[m[32m     </div>[m
+ [m
+[31m-      <div className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-5">[m
+[31m-      Promo Toyota {monthYear}[m
+[31m-      </div>[m
+[32m+[m[32m     <div className="inline-block bg-red-600 text-white px-3 py-1.5 rounded-full text-xs font-semibold mb-4">[m
+[32m+[m[32m    Promo Toyota {monthYear}[m
+[32m+[m[32m    </div>[m
+ [m
+       <div className="space-y-2 mb-4">[m
+ [m
+[31m-  <div className="bg-red-50 border border-red-100 p-4 rounded-2xl">[m
+[31m-    <p className="text-xs text-gray-500">[m
+[31m-      Harga OTR Mulai[m
+[31m-    </p>[m
+[31m-    <p className="text-xl font-black text-red-600">[m
+[31m-      {selectedCar.price}[m
+[31m-    </p>[m
+[31m-  </div>[m
+[32m+[m[32m     <div className="bg-red-50 border border-red-100 px-4 py-2 rounded-xl">[m
+[32m+[m[32m     <p className="text-[10px] text-gray-500">[m
+[32m+[m[32m        Harga OTR Mulai[m
+[32m+[m[32m     </p>[m
+ [m
+[31m-  <div className="bg-gray-50 border p-4 rounded-2xl">[m
+[31m-    <p className="text-xs text-gray-500">[m
+[31m-      UM Setor Konsumen[m
+[31m-    </p>[m
+[31m-    <p className="text-xl font-black text-black">[m
+[31m-      {selectedCar.dp}[m
+[31m-    </p>[m
+[31m-  </div>[m
+[31m-[m
+[31m-  <div className="mb-4">[m
+[31m-  <p className="text-xs text-gray-500 mb-2">[m
+[31m-    Pilih Tenor[m
+[31m-  </p>[m
+[31m-[m
+[31m-  <div className="grid grid-cols-5 gap-2">[m
+[31m-[m
+[31m-    <button[m
+[31m-      onClick={() => setSelectedTenor(12)}[m
+[31m-      className={`p-2 rounded-xl text-sm font-bold ${[m
+[31m-        selectedTenor === 12[m
+[31m-          ? "bg-red-600 text-white"[m
+[31m-          : "bg-gray-100 text-black"[m
+[31m-      }`}[m
+[31m-    >[m
+[31m-      12[m
+[31m-    </button>[m
+[31m-[m
+[31m-    <button[m
+[31m-      onClick={() => setSelectedTenor(24)}[m
+[31m-      className={`p-2 rounded-xl text-sm font-bold ${[m
+[31m-        selectedTenor === 24[m
+[31m-          ? "bg-red-600 text-white"[m
+[31m-          : "bg-gray-100 text-black"[m
+[31m-      }`}[m
+[31m-    >[m
+[31m-      24[m
+[31m-    </button>[m
+[31m-[m
+[31m-    <button[m
+[31m-      onClick={() => setSelectedTenor(36)}[m
+[31m-      className={`p-2 rounded-xl text-sm font-bold ${[m
+[31m-        selectedTenor === 36[m
+[31m-          ? "bg-red-600 text-white"[m
+[31m-          : "bg-gray-100 text-black"[m
+[31m-      }`}[m
+[31m-    >[m
+[31m-      36[m
+[31m-    </button>[m
+[31m-[m
+[31m-    <button[m
+[31m-      onClick={() => setSelectedTenor(48)}[m
+[31m-      className={`p-2 rounded-xl text-sm font-bold ${[m
+[31m-        selectedTenor === 48[m
+[31m-          ? "bg-red-600 text-white"[m
+[31m-          : "bg-gray-100 text-black"[m
+[31m-      }`}[m
+[31m-    >[m
+[31m-      48[m
+[31m-    </button>[m
+[31m-[m
+[31m-    <button[m
+[31m-      onClick={() => setSelectedTenor(60)}[m
+[31m-      className={`p-2 rounded-xl text-sm font-bold ${[m
+[31m-        selectedTenor === 60[m
+[31m-          ? "bg-red-600 text-white"[m
+[31m-          : "bg-gray-100 text-black"[m
+[31m-      }`}[m
+[31m-    >[m
+[31m-      60[m
+[31m-    </button>[m
+[32m+[m[32m     <p className="text-xl font-bold text-red-600 leading-tight">[m
+[32m+[m[32m     {selectedCar.price}[m
+[32m+[m[32m     </p>[m
+ [m
+[32m+[m[32m</div>[m
+[32m+[m[41m  [m
+[32m+[m[32m<div className="border rounded-xl overflow-hidden">[m
+[32m+[m[41m  [m
+[32m+[m[32m  <div className="grid grid-cols-[2fr_1fr] bg-green-500 text-white text-xs font-bold">[m
+[32m+[m[32m    <div className="p-2">TYPE</div>[m
+[32m+[m[32m    <div className="p-2 text-right">OTR</div>[m
+   </div>[m
+[32m+[m[32m  {carVariants[selectedCar.name]?.map((item, index) => ([m
+[32m+[m[32m  <div[m
+[32m+[m[32m    key={index}[m
+[32m+[m[32m    className="grid grid-cols-[2fr_1fr] border-t text-xs"[m
+[32m+[m[32m  >[m
+[32m+[m[32m    <div className="p-2 text-black">[m
+[32m+[m[32m  {item.type}[m
+ </div>[m
+ [m
+[31m-  <div className="bg-gray-50 border p-4 rounded-2xl">[m
+[31m-    <p className="text-xs text-gray-500">[m
+[31m-      Angsuran {selectedTenor} Bulan[m
+[31m-    </p>[m
+[31m-    <p className="text-xl font-black text-black">[m
+[31m-       {selectedTenor === 12 && selectedCar.tenor12}[m
+[31m-       {selectedTenor === 24 && selectedCar.tenor24}[m
+[31m-       {selectedTenor === 36 && selectedCar.tenor36}[m
+[31m-       {selectedTenor === 48 && selectedCar.tenor48}[m
+[31m-       {selectedTenor === 60 && selectedCar.tenor60}[m
+[31m-</p>[m
+[32m+[m[32m<div className="p-2 text-right text-black font-semibold">[m
+[32m+[m[32m  {item.price}[m
+[32m+[m[32m</div>[m
+   </div>[m
+[32m+[m[32m))}[m
+[32m+[m
+[32m+[m[32m</div>[m
+ [m
+ </div>[m
+       <div className="grid grid-cols-2 gap-3">[m
+[36m@@ -1271,11 +1823,11 @@[m [mSaya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+   <button[m
+     onClick={() =>[m
+       window.open([m
+[31m-        `https://wa.me/6282340002917?text=Halo Pak Hayatul, saya ingin booking test drive Toyota ${selectedCar.name}`,[m
+[32m+[m[32m        `https://wa.me/${currentSales.wa}?text=Halo Kak ${currentSales.nama}, saya ingin booking test drive Toyota ${selectedCar.name}`,[m
+         "_blank"[m
+       )[m
+     }[m
+[31m-    className="bg-black text-white py-3 rounded-xl font-bold hover:bg-gray-800"[m
+[32m+[m[32m    className="bg-black text-white py-2 rounded-xl text-sm font-semibold hover:bg-gray-800"[m
+   >[m
+     🚗 Test Drive[m
+   </button>[m
+[36m@@ -1283,13 +1835,14 @@[m [mSaya tertarik dengan promo Toyota dan ingin mendapatkan penawaran terbaik.`;[m
+   <button[m
+     onClick={() =>[m
+       window.open([m
+[31m-        `https://wa.me/6282340002917?text=Halo Pak Hayatul, saya tertarik dengan Toyota ${selectedCar.name}`,[m
+[32m+[m[32m        `https://wa.me/${currentSales.wa}?text=Halo Kak ${currentSales.nama}, saya tertarik dengan Toyota ${selectedCar.name}`,[m
+         "_blank"[m
+       )[m
+     }[m
+[31m-    className="bg-green-500 text-white py-4 rounded-2xl font-bold hover:bg-green-600"[m
+[32m+[m
+[32m+[m[32m    className="bg-green-500 text-white py-2 rounded-xl text-sm font-semibold hover:bg-green-600"[m
+   >[m
+[31m-    📲 Cek Promo[m
+[32m+[m[32m    📲 Minta Penawaran[m
+   </button>[m
+ [m
+ </div>[m
