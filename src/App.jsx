@@ -817,7 +817,7 @@ if (ogUrl) {
 
   <div className="flex items-center gap-3 text-lg">
     <span>✅</span>
-    <span>Trade In Semua Merek</span>
+    <span>Tukar Tambah Kendaraan</span>
   </div>
 
   <div className="flex items-center gap-3 text-lg">
@@ -1018,7 +1018,7 @@ Mohon informasi lebih lanjut. Terima kasih.
       </div>
 
       <div className="bg-white text-red-700 rounded-2xl py-3 px-6 font-semibold shadow-[0_10px_30px_rgba(0,0,0,0.15)] hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(0,0,0,0.2)] transition-all duration-300">
-        ✓ Trade In Semua Merek
+        ✓ Tukar Tambah Kendaraan
       </div>
 
       <div className="bg-white text-red-700 rounded-2xl py-3 px-6 font-semibold shadow-[0_10px_30px_rgba(0,0,0,0.15)] hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(0,0,0,0.2)] transition-all duration-300">
