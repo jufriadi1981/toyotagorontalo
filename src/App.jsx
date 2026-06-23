@@ -829,7 +829,7 @@ if (ogUrl) {
 
 
 <p className="mt-4 text-lg text-green-400 font-semibold">
-  🛡️ Gratis Asuransi 2 Tahun*
+  🛡️ Promo Proteksi Kendaraan
 </p>
 
   <div className="mt-6 grid grid-cols-4 border border-white/10 rounded-2xl overflow-hidden max-w-lg bg-black/20 backdrop-blur-md">
